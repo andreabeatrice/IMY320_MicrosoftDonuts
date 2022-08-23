@@ -16,7 +16,7 @@
 lorem ipsum
 
 ### What is your overarching theme?
-lorem ipsum
+lorem ipsum - Andrea
 
 ### Include some market research on existing websites with similar themes
 lorem ipsum
