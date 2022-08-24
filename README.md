@@ -9,6 +9,7 @@
 * Provide written documentation about the choices of design, the reasons behind these choices and other considerations that influenced the choices.
 * Along with your written proposal include illustrations, concept sketches, and other inspirations that led you to the final design.
 * This document is a formal proposal and will be required to follow any existing design proposal format.
+  * Suggestion: https://www.up.ac.za/communication-management-division/article/2417100/research-proposal-guidelines
 * It will also be a requirement to provide sources to support your claims within this document.
 * Add your design proposal as the “readme” of the repository IMY320_MicrosoftDonuts. 
 
