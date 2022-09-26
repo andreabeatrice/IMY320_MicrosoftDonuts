@@ -33,6 +33,7 @@ h1{
 
 a, a:visited {
     color: var(--main-text-colour);
+    text-decoration: none;
 }
 
 a:current{
@@ -41,4 +42,7 @@ a:current{
 
 a:hover {
     color: var(--blue-jeans);
+}
+ul>li {
+    list-style-type: none;
 }
