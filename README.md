@@ -61,5 +61,5 @@ Stevens, E. 2022. The 9 Best UX Design Portfolio Examples (Updated For 2022). Av
 * make changes
 * ```git add .```
 * ```git commit -am "make it better"```
-* ```git push heroku master```
+* ```git push heroku main```
 * ```heroku open```
