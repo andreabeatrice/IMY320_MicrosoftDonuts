@@ -1,5 +1,5 @@
-import express from "express";
- 
+const express = require("express"),
+    path = require("path"); 
 //CREATE APP
 const app = express();
  
@@ -9,4 +9,8 @@ app.use(express.static("public"));
 //PORT TO LISTEN TO
 app.listen(8080, () => {
     console.log("Listening on localhost:8080");
+});
+
+app.get('/', (req,res) => {
+    res.sendFiles(path.resolve(`./public/index.html`));
 });
