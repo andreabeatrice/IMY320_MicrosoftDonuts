@@ -28,3 +28,15 @@ h1{
     font-weight: 400;
     font-style: normal;
 }
+
+a, a:visited {
+    color: var(--main-text-colour);
+}
+
+a:current{
+    color: var(--shocking-pink);
+}
+
+a:hover {
+    color: var(--blue-jeans);
+}
