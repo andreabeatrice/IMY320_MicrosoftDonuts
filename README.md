@@ -38,3 +38,13 @@ lorem ipsum
 
 ### [User task and user journey] What goals are you designing for?
 lorem ipsum
+
+## Heroku Shit
+heroku login
+heroku git:clone -a microsoft-donuts-portfolio 
+cd microsoft-donuts-portfolio
+make changes
+git add .
+git commit -am "make it better"
+git push heroku master
+heroku open
