@@ -4,8 +4,8 @@
   "description": "* You are required to design and develop a website for a self-made content creation company (your group).\r * The website should serve as a general portfolio of the projects the company have done and advertise the services available\r * The website will need to showcase at least 10 projects to which the company has contributed.",
   "main": "index.js",
   "scripts": {
-    "build" :"babel server.js -d dist",
-    "start" : "npm run build && node dist/server.js"
+    "build" :"babel src/index.js -d dist",
+    "start" : "npm run build"
   },
   "repository": {
     "type": "git",
