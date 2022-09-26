@@ -41,7 +41,7 @@ lorem ipsum
 
 ## Heroku Shit
 * Download https://devcenter.heroku.com/articles/heroku-cli
-* ```heroku login```
+* ```heroku login``` (sign in using microsoftdonuts@yahoo.com + password on Google Drive)
 * ```heroku git:clone -a microsoft-donuts-portfolio```
 * ```cd microsoft-donuts-portfolio```
 * make changes
