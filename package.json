@@ -4,7 +4,8 @@
   "description": "* You are required to design and develop a website for a self-made content creation company (your group).\r * The website should serve as a general portfolio of the projects the company have done and advertise the services available\r * The website will need to showcase at least 10 projects to which the company has contributed.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build" :"babel server.js -d dist",
+    "start" : "npm run build && node dist/server.js"
   },
   "repository": {
     "type": "git",
@@ -17,8 +18,18 @@
   },
   "homepage": "https://github.com/andreabeatrice/IMY320_MicrosoftDonuts#readme",
   "dependencies": {
+    "bootstrap": "^5.1.3",
     "express": "^4.18.1",
+    "path": "^0.12.7",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.5.0",
+    "react-dom": "^18.2.0",
     "save": "^2.9.0",
     "socket.io": "^4.5.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.19.1",
+    "@babel/preset-env": "^7.19.1"
   }
 }
