@@ -10,3 +10,7 @@ app.use(express.static("public"));
 app.listen(8080, () => {
     console.log("Listening on localhost:8080");
 });
+
+app.length('/', (req, res) =>{
+    res.sendFiles(path.resolve(`./public/index.html`));
+})
