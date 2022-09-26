@@ -21,6 +21,8 @@
 body {
     color: var(--main-text-colour);
     background-color: var(--main-bg-colour);
+
+    font-family: 'RobotoMono', sans-serif;
 }
 
 h1{
