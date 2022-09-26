@@ -40,11 +40,12 @@ lorem ipsum
 lorem ipsum
 
 ## Heroku Shit
-heroku login
-heroku git:clone -a microsoft-donuts-portfolio 
-cd microsoft-donuts-portfolio
-make changes
-git add .
-git commit -am "make it better"
-git push heroku master
-heroku open
+* Download https://devcenter.heroku.com/articles/heroku-cli
+* ```heroku login```
+* ```heroku git:clone -a microsoft-donuts-portfolio```
+* ```cd microsoft-donuts-portfolio```
+* make changes
+* ```git add .```
+* ```git commit -am "make it better"```
+* ```git push heroku master```
+* ```heroku open```
