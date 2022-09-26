@@ -1,11 +1,11 @@
 # IMY 320 Web Project Proposal & Concept
 ### 🍩Microsoft Donuts🍩
 
-Jarod Jeffery       u18003193
-Andrea Blignaut     u19130938
-Caleb Groeneveld    u19340631 @u19340631
-Cassim Chifamba     u19024895
-Liezelle Mmako      u19111798
+- Jarod Jeffery       u18003193
+- [Andrea Blignaut     u19130938](https://github.com/andreabeatrice)
+- [Caleb Groeneveld    u19340631](https://github.com/u19340631) 
+- Cassim Chifamba     u19024895
+- Liezelle Mmako      u19111798
 
 ### Introduction
 This is an early proposal for a UX Portfolio Website—essentially an online CV for a content creation group. It needs to be engaging, so that users will feel confident in hiring the group to create engaging content on their behalf.
