@@ -12,3 +12,6 @@ app.use(_express["default"]["static"]("public")); //PORT TO LISTEN TO
 app.listen(8080, function () {
   console.log("Listening on localhost:8080");
 });
+app.get('/', function (req, res) {
+  res.sendFiles(path.resolve("./public/index.html"));
+});
