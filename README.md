@@ -4,7 +4,7 @@
 - Jarod Jeffery       u18003193
 - [Andrea Blignaut     u19130938](https://github.com/andreabeatrice)
 - [Caleb Groeneveld    u19340631](https://github.com/u19340631) 
-- Cassim Chifamba     u19024895
+- [Cassim Chifamba     u19024895](https://github.com/catsums)
 - Liezelle Mmako      u19111798
 
 ## Website available at: (https://microsoft-donuts-portfolio.herokuapp.com/)
