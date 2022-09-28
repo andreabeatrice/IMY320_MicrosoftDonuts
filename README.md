@@ -61,6 +61,7 @@ Stevens, E. 2022. The 9 Best UX Design Portfolio Examples (Updated For 2022). Av
 * ```heroku git:clone -a microsoft-donuts-portfolio```
 * ```cd microsoft-donuts-portfolio```
 * make changes
+* to see live shanges without pushing each time, you can run ```heroku local``` in the terminal and go to ```localhost:5000```
 * ```git add .```
 * ```git commit -am "make it better"```
 * ```git push heroku main```
