@@ -1,0 +1,50 @@
+<html>
+    <h1>Welcome, to Music4All</h1>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = "stylesheet" type = "text/css" href = "CssStyles/myStyle.css" />
+    <script src="loading.js"></script>
+    </head>
+    <script>
+        var str =decodeURIComponent(window.location.search);
+        str = str.substring(1);
+        arrID = str.split("/");
+        id = arrID[0];
+
+        var search = null;
+        if(arrID[1] != ""){
+            search =arrID[1];
+            alert(search);
+        }
+    </script>
+    <body onload= AlbumPage(id,search)>
+        
+        <div class="topnav">
+            <img src="CssStyles/music.jpeg" alt="Microphone">
+            <a href="index.html">Index</a>
+            <a href="trending.html">Trending</a>
+            <a href="topRated.html">Top Rated</a>
+            <a href="newRelease.html">New Release</a>
+            <a href="featured.html">Featured</a>
+            <a href="Calander.html">Calander</a>
+            <a class = active>Album</a>
+            <input type= "text" placeholder="Search">
+        </div>
+        <div id="loader"></div>
+        <div style="display:none;" id="myDiv" class="animate-bottom">
+            <p id ="info"></p>
+            <p id = allTracks></p>  
+            </br></br>
+            <div class = "player" id= "audioEle" style="display:none;">
+                <audio id="myAudio" controls="controls">
+                    <source id ="audioSource" src= "" type="audio/ogg">
+                    <source id ="audioSource" src= "" type="audio/mpeg">
+                </audio> 
+                </br>
+                </br>
+                <button onclick="playAudio()" type="button">Play Audio</button>
+                <button onclick="pauseAudio()" type="button">Pause Audio</button>
+                
+            </div>
+        </div>
+    </body>
+</html>
