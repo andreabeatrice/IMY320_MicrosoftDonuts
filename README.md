@@ -1,11 +1,11 @@
 # IMY 320 Web Project Proposal & Concept
 ### 🍩Microsoft Donuts🍩
 
-- Jarod Jeffery       u18003193
+- [Jarod Jeffery       u18003193](https://github.com/TheGayKo)
 - [Andrea Blignaut     u19130938](https://github.com/andreabeatrice)
 - [Caleb Groeneveld    u19340631](https://github.com/u19340631) 
 - [Cassim Chifamba     u19024895](https://github.com/catsums)
-- Liezelle Mmako      u19111798
+- [Liezelle Mmako      u19111798](https://github.com/Liezelle20)
 
 ## Website available at: (https://microsoft-donuts-portfolio.herokuapp.com/)
 
@@ -61,6 +61,7 @@ Stevens, E. 2022. The 9 Best UX Design Portfolio Examples (Updated For 2022). Av
 * ```heroku git:clone -a microsoft-donuts-portfolio```
 * ```cd microsoft-donuts-portfolio```
 * make changes
+* to see live shanges without pushing each time, you can run ```heroku local``` in the terminal and go to ```localhost:5000```
 * ```git add .```
 * ```git commit -am "make it better"```
 * ```git push heroku main```
