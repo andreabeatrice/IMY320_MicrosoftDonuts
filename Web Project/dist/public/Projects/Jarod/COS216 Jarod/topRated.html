@@ -1,0 +1,25 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = "stylesheet" type = "text/css" href = "CssStyles/myStyle.css" />
+    <script src="loading.js"></script>
+    </head>
+    <body onload= chartToper()>
+        <div id="loader"></div>
+        <div style="display:none;" id="myDiv" class="animate-bottom">
+            <h2>Top 10 Albums</h2>
+            <p id = "album"></p>
+            <h2>Top 10 Songs</h2>
+            <p id = "songs"></p>
+            <div class = "player" id= "audioEle" style="display:none;">
+                <button onclick="playAudio()" type="button">Play Audio</button>
+                <button onclick="pauseAudio()" type="button">Pause Audio</button>
+                <audio id="myAudio" controls="controls">
+                    <source id ="audioSource" src= "" type="audio/ogg">
+                    <source id ="audioSource" src= "" type="audio/mpeg">
+                </audio> 
+            </div>
+            <h2>Top 10 Artists</h2>
+            <p id = "artist"></p>
+        </div>
+    </body>
+</html>
