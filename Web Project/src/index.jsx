@@ -68,7 +68,7 @@ function animate() {
 
 const loader = new GLTFLoader();
 
-loader.load( '/Assets/donut3d/scene.gltf', function ( gltf ) {
+loader.load( 'Projects/Assets/donut3d/scene.gltf', function ( gltf ) {
 
 	obj = gltf.scene;
 
