@@ -8,7 +8,7 @@ $(function() {
     });
 
     $('#toTop').click(function() {
-        $('body,html').animate({scrollTop:0},800);
+        $('body,html').animate({scrollTop:0},0);
     });    
 });
 
@@ -48,6 +48,7 @@ $("#nav_cont").click(function() {
     }, 2000);
 });
 
+<<<<<<< Updated upstream
 // var mouse = document.getElementById("mouse");
 // document.body.addEventListener("mousemove", function(e) {
 
@@ -56,4 +57,16 @@ $("#nav_cont").click(function() {
 //         mouse.style.top = e.clientY + "px";
 //     }
 
+=======
+
+
+// var mouse = document.getElementById("mouse");
+// document.body.addEventListener("mousemove", function(e) {
+
+//     if(e.clientX <= 520){
+//         mouse.style.left = e.clientX + "px",
+//         mouse.style.top = e.clientY + "px";
+//     }
+
+>>>>>>> Stashed changes
 // });

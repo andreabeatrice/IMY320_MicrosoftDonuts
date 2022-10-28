@@ -60,10 +60,10 @@ a, a:visited {
     text-decoration: none;
 }
 
-a:current{
+/* a:active{
     color: var(--shocking-pink);
     text-decoration: none;
-}
+} */
 
 a:hover {
     color: var(--blue-jeans);
@@ -186,5 +186,16 @@ button[class^="grow"]::after {
   }
   .card img {
     width: 30%;
+<<<<<<< Updated upstream
   }
 
+=======
+    height:  30%;
+  }
+
+#FallingDonuts {
+  width: 100%;
+  position:absolute;
+  z-index:-999;
+}
+>>>>>>> Stashed changes
