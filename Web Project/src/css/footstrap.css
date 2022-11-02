@@ -1,0 +1,860 @@
+/*footstrap.scss*/
+
+:root{
+	--xs: 0px;
+	--sm: 576px;
+	--md: 768px;
+	--lg: 992px;
+	--xl: 1200px;
+	--xxl: 1400px;
+	--4k: 2160px;
+}
+
+.opacity-auto{opacity: auto}
+.opacity-0{opacity: 0}
+.opacity-10{opacity: 0.1}
+.opacity-20{opacity: 0.2}
+.opacity-25{opacity: 0.25}
+.opacity-30{opacity: 0.3}
+.opacity-40{opacity: 0.4}
+.opacity-50{opacity: 0.5}
+.opacity-60{opacity: 0.6}
+.opacity-75{opacity: 0.75}
+.opacity-80{opacity: 0.8}
+.opacity-90{opacity: 0.9}
+.opacity-100{opacity: 1}
+
+.h-auto{height: auto}
+.h-0{height: 0%}
+.h-5{height: 5%}
+.h-10{height: 10%}
+.h-15{height: 15%}
+.h-20{height: 20%}
+.h-30{height: 30%}
+.h-40{height: 40%}
+.h-60{height: 60%}
+.h-70{height: 70%}
+.h-80{height: 80%}
+.h-85{height: 85%}
+.h-90{height: 90%}
+.h-95{height: 95%}
+
+.w-auto{width: auto;}
+.w-0{width: 0%}
+.w-5{width: 5%}
+.w-10{width: 10%}
+.w-15{width: 15%}
+.w-20{width: 20%}
+.w-30{width: 30%}
+.w-40{width: 40%}
+.w-60{width: 60%}
+.w-70{width: 70%}
+.w-80{width: 80%}
+.w-85{width: 85%}
+.w-90{width: 90%}
+.w-95{width: 95%}
+
+.font-auto{font-size: auto}
+.font-0{font-size: 0em}
+.font-5{font-size: 0.05em}
+.font-10{font-size: 0.10em}
+.font-15{font-size: 0.15em}
+.font-20{font-size: 0.2em}
+.font-25{font-size: 0.25em}
+.font-30{font-size: 0.3em}
+.font-40{font-size: 0.4em}
+.font-50{font-size: 0.5em}
+.font-60{font-size: 0.6em}
+.font-70{font-size: 0.7em}
+.font-75{font-size: 0.75em}
+.font-80{font-size: 0.8em}
+.font-90{font-size: 0.9em}
+.font-100{font-size: 1em}
+.font-110{font-size: 1.1em}
+.font-120{font-size: 1.2em}
+.font-125{font-size: 1.25em}
+.font-130{font-size: 1.3em}
+.font-140{font-size: 1.4em}
+.font-150{font-size: 1.5em}
+.font-160{font-size: 1.6em}
+.font-170{font-size: 1.7em}
+.font-175{font-size: 1.75em}
+.font-180{font-size: 1.8em}
+.font-190{font-size: 1.9em}
+.font-200{font-size: 2em}
+.font-225{font-size: 2.25em}
+.font-250{font-size: 2.5em}
+.font-275{font-size: 2.75em}
+.font-300{font-size: 3em}
+.font-400{font-size: 4em}
+.font-500{font-size: 5em}
+.font-600{font-size: 6em}
+.font-750{font-size: 7.5em}
+.font-800{font-size: 8em}
+.font-900{font-size: 9em}
+.font-1000{font-size: 10em}
+
+.scale-0{transform: scale(0.0)}
+.scale-5{transform: scale(0.05)}
+.scale-10{transform: scale(0.10)}
+.scale-15{transform: scale(0.15)}
+.scale-20{transform: scale(0.20)}
+.scale-25{transform: scale(0.25)}
+.scale-30{transform: scale(0.3)}
+.scale-40{transform: scale(0.4)}
+.scale-50{transform: scale(0.5)}
+.scale-60{transform: scale(0.6)}
+.scale-70{transform: scale(0.7)}
+.scale-75{transform: scale(0.75)}
+.scale-80{transform: scale(0.8)}
+.scale-90{transform: scale(0.9)}
+.scale-100{transform: scale(1.0)}
+.scale-110{transform: scale(1.1)}
+.scale-120{transform: scale(1.2)}
+.scale-125{transform: scale(1.25)}
+.scale-130{transform: scale(1.3)}
+.scale-140{transform: scale(1.4)}
+.scale-150{transform: scale(1.5)}
+.scale-160{transform: scale(1.6)}
+.scale-170{transform: scale(1.7)}
+.scale-175{transform: scale(1.75)}
+.scale-180{transform: scale(1.8)}
+.scale-190{transform: scale(1.9)}
+.scale-200{transform: scale(2.0)}
+.scale-225{transform: scale(2.25)}
+.scale-250{transform: scale(2.5)}
+.scale-275{transform: scale(2.75)}
+.scale-300{transform: scale(3.0)}
+.scale-400{transform: scale(4.0)}
+.scale-500{transform: scale(5.0)}
+.scale-600{transform: scale(6.0)}
+.scale-750{transform: scale(7.5)}
+.scale-800{transform: scale(8.0)}
+.scale-900{transform: scale(9.0)}
+.scale-1000{transform: scale(10.0)}
+
+.wrap-break-word{overflow-wrap: break-word;}
+
+/*// extra Small devices */
+@media (min-width: 10px) {
+	.h-xs-auto{height: auto;}
+	.h-xs-0{height: 0%}
+	.h-xs-25{height: 25%}
+	.h-xs-50{height: 50%}
+	.h-xs-75{height: 75%}
+	.h-xs-100{height: 100%}
+
+	.w-xs-auto{width: auto;}
+	.w-xs-0{width: 0%}
+	.w-xs-25{width: 25%}
+	.w-xs-50{width: 50%}
+	.w-xs-75{width: 75%}
+	.w-xs-100{width: 100%}
+}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+	.h-sm-auto{height: auto}
+	.h-sm-0{height: 0%}
+	.h-sm-5{height: 5%}
+	.h-sm-10{height: 10%}
+	.h-sm-15{height: 15%}
+	.h-sm-20{height: 20%}
+	.h-sm-25{height: 25%}
+	.h-sm-30{height: 30%}
+	.h-sm-40{height: 40%}
+	.h-sm-50{height: 50%}
+	.h-sm-60{height: 60%}
+	.h-sm-70{height: 70%}
+	.h-sm-75{height: 75%}
+	.h-sm-80{height: 80%}
+	.h-sm-90{height: 90%}
+	.h-sm-100{height: 100%}
+
+	.w-sm-auto{width: auto}
+	.w-sm-0{width: 0%}
+	.w-sm-5{width: 5%}
+	.w-sm-10{width: 10%}
+	.w-sm-15{width: 15%}
+	.w-sm-20{width: 20%}
+	.w-sm-25{width: 25%}
+	.w-sm-30{width: 30%}
+	.w-sm-40{width: 40%}
+	.w-sm-50{width: 50%}
+	.w-sm-60{width: 60%}
+	.w-sm-70{width: 70%}
+	.w-sm-75{width: 75%}
+	.w-sm-80{width: 80%}
+	.w-sm-90{width: 90%}
+	.w-sm-100{width: 100%}
+
+	.font-sm-auto{font-size: auto}
+	.font-sm-0{font-size: 0em}
+	.font-sm-5{font-size: 0.05em}
+	.font-sm-10{font-size: 0.10em}
+	.font-sm-15{font-size: 0.15em}
+	.font-sm-20{font-size: 0.2em}
+	.font-sm-25{font-size: 0.25em}
+	.font-sm-30{font-size: 0.3em}
+	.font-sm-40{font-size: 0.4em}
+	.font-sm-50{font-size: 0.5em}
+	.font-sm-60{font-size: 0.6em}
+	.font-sm-70{font-size: 0.7em}
+	.font-sm-75{font-size: 0.75em}
+	.font-sm-80{font-size: 0.8em}
+	.font-sm-90{font-size: 0.9em}
+	.font-sm-100{font-size: 1em}
+	.font-sm-110{font-size: 1.1em}
+	.font-sm-120{font-size: 1.2em}
+	.font-sm-130{font-size: 1.3em}
+	.font-sm-140{font-size: 1.4em}
+	.font-sm-125{font-size: 1.25em}
+	.font-sm-100{font-size: 1em}
+	.font-sm-150{font-size: 1.5em}
+	.font-sm-160{font-size: 1.6em}
+	.font-sm-170{font-size: 1.7em}
+	.font-sm-175{font-size: 1.75em}
+	.font-sm-180{font-size: 1.8em}
+	.font-sm-190{font-size: 1.9em}
+	.font-sm-200{font-size: 2em}
+	.font-sm-225{font-size: 2.25em}
+	.font-sm-250{font-size: 2.5em}
+	.font-sm-275{font-size: 2.75em}
+	.font-sm-300{font-size: 3em}
+	.font-sm-400{font-size: 4em}
+	.font-sm-500{font-size: 5em}
+	.font-sm-600{font-size: 6em}
+	.font-sm-750{font-size: 7.5em}
+	.font-sm-800{font-size: 8em}
+	.font-sm-900{font-size: 9em}
+	.font-sm-1000{font-size: 10em}
+
+	.scale-sm-0{transform: scale(0.0)}
+	.scale-sm-5{transform: scale(0.05)}
+	.scale-sm-10{transform: scale(0.10)}
+	.scale-sm-15{transform: scale(0.15)}
+	.scale-sm-20{transform: scale(0.2)}
+	.scale-sm-25{transform: scale(0.25)}
+	.scale-sm-30{transform: scale(0.3)}
+	.scale-sm-40{transform: scale(0.4)}
+	.scale-sm-50{transform: scale(0.5)}
+	.scale-sm-60{transform: scale(0.6)}
+	.scale-sm-70{transform: scale(0.7)}
+	.scale-sm-75{transform: scale(0.75)}
+	.scale-sm-80{transform: scale(0.8)}
+	.scale-sm-90{transform: scale(0.9)}
+	.scale-sm-100{transform: scale(1.0)}
+	.scale-sm-110{transform: scale(1.1)}
+	.scale-sm-120{transform: scale(1.2)}
+	.scale-sm-125{transform: scale(1.25)}
+	.scale-sm-130{transform: scale(1.3)}
+	.scale-sm-140{transform: scale(1.4)}
+	.scale-sm-150{transform: scale(1.5)}
+	.scale-sm-160{transform: scale(1.6)}
+	.scale-sm-170{transform: scale(1.7)}
+	.scale-sm-175{transform: scale(1.75)}
+	.scale-sm-180{transform: scale(1.8)}
+	.scale-sm-190{transform: scale(1.9)}
+	.scale-sm-200{transform: scale(2.0)}
+	.scale-sm-225{transform: scale(2.25)}
+	.scale-sm-250{transform: scale(2.5)}
+	.scale-sm-275{transform: scale(2.75)}
+	.scale-sm-300{transform: scale(3.0)}
+	.scale-sm-400{transform: scale(4.0)}
+	.scale-sm-500{transform: scale(5.0)}
+	.scale-sm-600{transform: scale(6.0)}
+	.scale-sm-750{transform: scale(7.5)}
+	.scale-sm-800{transform: scale(8.0)}
+	.scale-sm-900{transform: scale(9.0)}
+	.scale-sm-1000{transform: scale(10.0)}
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+	.h-md-auto{height: auto}
+	.h-md-0{height: 0%}
+	.h-md-5{height: 5%}
+	.h-md-10{height: 10%}
+	.h-md-15{height: 15%}
+	.h-md-20{height: 20%}
+	.h-md-25{height: 25%}
+	.h-md-30{height: 30%}
+	.h-md-40{height: 40%}
+	.h-md-50{height: 50%}
+	.h-md-60{height: 60%}
+	.h-md-70{height: 70%}
+	.h-md-75{height: 75%}
+	.h-md-80{height: 80%}
+	.h-md-90{height: 90%}
+	.h-md-100{height: 100%}
+
+	.w-md-auto{width: auto}
+	.w-md-0{width: 0%}
+	.w-md-5{width: 5%}
+	.w-md-10{width: 10%}
+	.w-md-15{width: 15%}
+	.w-md-20{width: 20%}
+	.w-md-25{width: 25%}
+	.w-md-30{width: 30%}
+	.w-md-40{width: 40%}
+	.w-md-50{width: 50%}
+	.w-md-60{width: 60%}
+	.w-md-70{width: 70%}
+	.w-md-75{width: 75%}
+	.w-md-80{width: 80%}
+	.w-md-90{width: 90%}
+	.w-md-100{width: 100%}
+
+	.font-md-auto{font-size: auto}
+	.font-md-0{font-size: 0em}
+	.font-md-5{font-size: 0.05em}
+	.font-md-10{font-size: 0.10em}
+	.font-md-15{font-size: 0.15em}
+	.font-md-20{font-size: 0.2em}
+	.font-md-25{font-size: 0.25em}
+	.font-md-30{font-size: 0.3em}
+	.font-md-40{font-size: 0.4em}
+	.font-md-50{font-size: 0.5em}
+	.font-md-60{font-size: 0.6em}
+	.font-md-70{font-size: 0.7em}
+	.font-md-75{font-size: 0.75em}
+	.font-md-80{font-size: 0.8em}
+	.font-md-90{font-size: 0.9em}
+	.font-md-100{font-size: 1em}
+	.font-md-110{font-size: 1.1em}
+	.font-md-120{font-size: 1.2em}
+	.font-md-130{font-size: 1.3em}
+	.font-md-140{font-size: 1.4em}
+	.font-md-125{font-size: 1.25em}
+	.font-md-100{font-size: 1em}
+	.font-md-150{font-size: 1.5em}
+	.font-md-160{font-size: 1.6em}
+	.font-md-170{font-size: 1.7em}
+	.font-md-175{font-size: 1.75em}
+	.font-md-180{font-size: 1.8em}
+	.font-md-190{font-size: 1.9em}
+	.font-md-200{font-size: 2em}
+	.font-md-225{font-size: 2.25em}
+	.font-md-250{font-size: 2.5em}
+	.font-md-275{font-size: 2.75em}
+	.font-md-300{font-size: 3em}
+	.font-md-400{font-size: 4em}
+	.font-md-500{font-size: 5em}
+	.font-md-600{font-size: 6em}
+	.font-md-750{font-size: 7.5em}
+	.font-md-800{font-size: 8em}
+	.font-md-900{font-size: 9em}
+	.font-md-1000{font-size: 10em}
+
+	.scale-md-0{transform: scale(0.0)}
+	.scale-md-5{transform: scale(0.05)}
+	.scale-md-10{transform: scale(0.10)}
+	.scale-md-15{transform: scale(0.15)}
+	.scale-md-20{transform: scale(0.20)}
+	.scale-md-25{transform: scale(0.25)}
+	.scale-md-30{transform: scale(0.3)}
+	.scale-md-40{transform: scale(0.4)}
+	.scale-md-50{transform: scale(0.5)}
+	.scale-md-60{transform: scale(0.6)}
+	.scale-md-70{transform: scale(0.7)}
+	.scale-md-75{transform: scale(0.75)}
+	.scale-md-80{transform: scale(0.8)}
+	.scale-md-90{transform: scale(0.9)}
+	.scale-md-100{transform: scale(1.0)}
+	.scale-md-110{transform: scale(1.1)}
+	.scale-md-120{transform: scale(1.2)}
+	.scale-md-125{transform: scale(1.25)}
+	.scale-md-130{transform: scale(1.3)}
+	.scale-md-140{transform: scale(1.4)}
+	.scale-md-150{transform: scale(1.5)}
+	.scale-md-160{transform: scale(1.6)}
+	.scale-md-170{transform: scale(1.7)}
+	.scale-md-175{transform: scale(1.75)}
+	.scale-md-180{transform: scale(1.8)}
+	.scale-md-190{transform: scale(1.9)}
+	.scale-md-200{transform: scale(2.0)}
+	.scale-md-225{transform: scale(2.25)}
+	.scale-md-250{transform: scale(2.5)}
+	.scale-md-275{transform: scale(2.75)}
+	.scale-md-300{transform: scale(3.0)}
+	.scale-md-400{transform: scale(4.0)}
+	.scale-md-500{transform: scale(5.0)}
+	.scale-md-600{transform: scale(6.0)}
+	.scale-md-750{transform: scale(7.5)}
+	.scale-md-800{transform: scale(8.0)}
+	.scale-md-900{transform: scale(9.0)}
+	.scale-md-1000{transform: scale(10.0)}
+
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+	.h-lg-auto{height: auto}
+	.h-lg-0{height: 0%}
+	.h-lg-5{height: 5%}
+	.h-lg-10{height: 10%}
+	.h-lg-15{height: 15%}
+	.h-lg-20{height: 20%}
+	.h-lg-25{height: 25%}
+	.h-lg-30{height: 30%}
+	.h-lg-40{height: 40%}
+	.h-lg-50{height: 50%}
+	.h-lg-60{height: 60%}
+	.h-lg-70{height: 70%}
+	.h-lg-75{height: 75%}
+	.h-lg-80{height: 80%}
+	.h-lg-90{height: 90%}
+	.h-lg-100{height: 100%}
+
+	.w-lg-auto{width: auto}
+	.w-lg-0{width: 0%}
+	.w-lg-5{width: 5%}
+	.w-lg-10{width: 10%}
+	.w-lg-15{width: 15%}
+	.w-lg-20{width: 20%}
+	.w-lg-25{width: 25%}
+	.w-lg-30{width: 30%}
+	.w-lg-40{width: 40%}
+	.w-lg-50{width: 50%}
+	.w-lg-60{width: 60%}
+	.w-lg-70{width: 70%}
+	.w-lg-75{width: 75%}
+	.w-lg-80{width: 80%}
+	.w-lg-90{width: 90%}
+	.w-lg-100{width: 100%}
+
+	.font-lg-auto{font-size: auto}
+	.font-lg-0{font-size: 0em}
+	.font-lg-5{font-size: 0.05em}
+	.font-lg-10{font-size: 0.10em}
+	.font-lg-15{font-size: 0.15em}
+	.font-lg-20{font-size: 0.2em}
+	.font-lg-25{font-size: 0.25em}
+	.font-lg-30{font-size: 0.3em}
+	.font-lg-40{font-size: 0.4em}
+	.font-lg-50{font-size: 0.5em}
+	.font-lg-60{font-size: 0.6em}
+	.font-lg-70{font-size: 0.7em}
+	.font-lg-75{font-size: 0.75em}
+	.font-lg-80{font-size: 0.8em}
+	.font-lg-90{font-size: 0.9em}
+	.font-lg-100{font-size: 1em}
+	.font-lg-110{font-size: 1.1em}
+	.font-lg-120{font-size: 1.2em}
+	.font-lg-130{font-size: 1.3em}
+	.font-lg-140{font-size: 1.4em}
+	.font-lg-125{font-size: 1.25em}
+	.font-lg-100{font-size: 1em}
+	.font-lg-150{font-size: 1.5em}
+	.font-lg-160{font-size: 1.6em}
+	.font-lg-170{font-size: 1.7em}
+	.font-lg-175{font-size: 1.75em}
+	.font-lg-180{font-size: 1.8em}
+	.font-lg-190{font-size: 1.9em}
+	.font-lg-200{font-size: 2em}
+	.font-lg-225{font-size: 2.25em}
+	.font-lg-250{font-size: 2.5em}
+	.font-lg-275{font-size: 2.75em}
+	.font-lg-300{font-size: 3em}
+	.font-lg-400{font-size: 4em}
+	.font-lg-500{font-size: 5em}
+	.font-lg-600{font-size: 6em}
+	.font-lg-750{font-size: 7.5em}
+	.font-lg-800{font-size: 8em}
+	.font-lg-900{font-size: 9em}
+	.font-lg-1000{font-size: 10em}
+
+	.scale-lg-0{transform: scale(0.0)}
+	.scale-lg-5{transform: scale(0.05)}
+	.scale-lg-10{transform: scale(0.10)}
+	.scale-lg-15{transform: scale(0.15)}
+	.scale-lg-20{transform: scale(0.20)}
+	.scale-lg-25{transform: scale(0.25)}
+	.scale-lg-30{transform: scale(0.3)}
+	.scale-lg-40{transform: scale(0.4)}
+	.scale-lg-50{transform: scale(0.5)}
+	.scale-lg-60{transform: scale(0.6)}
+	.scale-lg-70{transform: scale(0.7)}
+	.scale-lg-75{transform: scale(0.75)}
+	.scale-lg-80{transform: scale(0.8)}
+	.scale-lg-90{transform: scale(0.9)}
+	.scale-lg-100{transform: scale(1.0)}
+	.scale-lg-110{transform: scale(1.1)}
+	.scale-lg-120{transform: scale(1.2)}
+	.scale-lg-125{transform: scale(1.25)}
+	.scale-lg-130{transform: scale(1.3)}
+	.scale-lg-140{transform: scale(1.4)}
+	.scale-lg-150{transform: scale(1.5)}
+	.scale-lg-160{transform: scale(1.6)}
+	.scale-lg-170{transform: scale(1.7)}
+	.scale-lg-175{transform: scale(1.75)}
+	.scale-lg-180{transform: scale(1.8)}
+	.scale-lg-190{transform: scale(1.9)}
+	.scale-lg-200{transform: scale(2.0)}
+	.scale-lg-225{transform: scale(2.25)}
+	.scale-lg-250{transform: scale(2.5)}
+	.scale-lg-275{transform: scale(2.75)}
+	.scale-lg-300{transform: scale(3.0)}
+	.scale-lg-400{transform: scale(4.0)}
+	.scale-lg-500{transform: scale(5.0)}
+	.scale-lg-600{transform: scale(6.0)}
+	.scale-lg-750{transform: scale(7.5)}
+	.scale-lg-800{transform: scale(8.0)}
+	.scale-lg-900{transform: scale(9.0)}
+	.scale-lg-1000{transform: scale(10.0)}
+
+}
+
+/*// X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	.h-xl-0{height: auto}
+	.h-xl-0{height: 0%}
+	.h-xl-5{height: 5%}
+	.h-xl-10{height: 10%}
+	.h-xl-15{height: 15%}
+	.h-xl-20{height: 20%}
+	.h-xl-25{height: 25%}
+	.h-xl-30{height: 30%}
+	.h-xl-40{height: 40%}
+	.h-xl-50{height: 50%}
+	.h-xl-60{height: 60%}
+	.h-xl-70{height: 70%}
+	.h-xl-75{height: 75%}
+	.h-xl-80{height: 80%}
+	.h-xl-90{height: 90%}
+	.h-xl-100{height: 100%}
+
+	.w-xl-0{width: auto}
+	.w-xl-0{width: 0%}
+	.w-xl-5{width: 5%}
+	.w-xl-10{width: 10%}
+	.w-xl-15{width: 15%}
+	.w-xl-20{width: 20%}
+	.w-xl-25{width: 25%}
+	.w-xl-30{width: 30%}
+	.w-xl-40{width: 40%}
+	.w-xl-50{width: 50%}
+	.w-xl-60{width: 60%}
+	.w-xl-70{width: 70%}
+	.w-xl-75{width: 75%}
+	.w-xl-80{width: 80%}
+	.w-xl-90{width: 90%}
+	.w-xl-100{width: 100%}
+
+	.font-xl-auto{font-size: auto}
+	.font-xl-0{font-size: 0em}
+	.font-xl-5{font-size: 0.05em}
+	.font-xl-10{font-size: 0.10em}
+	.font-xl-15{font-size: 0.15em}
+	.font-xl-20{font-size: 0.2em}
+	.font-xl-25{font-size: 0.25em}
+	.font-xl-30{font-size: 0.3em}
+	.font-xl-40{font-size: 0.4em}
+	.font-xl-50{font-size: 0.5em}
+	.font-xl-60{font-size: 0.6em}
+	.font-xl-70{font-size: 0.7em}
+	.font-xl-75{font-size: 0.75em}
+	.font-xl-80{font-size: 0.8em}
+	.font-xl-90{font-size: 0.9em}
+	.font-xl-100{font-size: 1em}
+	.font-xl-110{font-size: 1.1em}
+	.font-xl-120{font-size: 1.2em}
+	.font-xl-130{font-size: 1.3em}
+	.font-xl-140{font-size: 1.4em}
+	.font-xl-125{font-size: 1.25em}
+	.font-xl-100{font-size: 1em}
+	.font-xl-150{font-size: 1.5em}
+	.font-xl-160{font-size: 1.6em}
+	.font-xl-170{font-size: 1.7em}
+	.font-xl-175{font-size: 1.75em}
+	.font-xl-180{font-size: 1.8em}
+	.font-xl-190{font-size: 1.9em}
+	.font-xl-200{font-size: 2em}
+	.font-xl-225{font-size: 2.25em}
+	.font-xl-250{font-size: 2.5em}
+	.font-xl-275{font-size: 2.75em}
+	.font-xl-300{font-size: 3em}
+	.font-xl-400{font-size: 4em}
+	.font-xl-500{font-size: 5em}
+	.font-xl-600{font-size: 6em}
+	.font-xl-750{font-size: 7.5em}
+	.font-xl-800{font-size: 8em}
+	.font-xl-900{font-size: 9em}
+	.font-xl-1000{font-size: 10em}
+
+	.scale-xl-0{transform: scale(0.0)}
+	.scale-xl-5{transform: scale(0.05)}
+	.scale-xl-10{transform: scale(0.10)}
+	.scale-xl-15{transform: scale(0.15)}
+	.scale-xl-20{transform: scale(0.20)}
+	.scale-xl-25{transform: scale(0.25)}
+	.scale-xl-30{transform: scale(0.3)}
+	.scale-xl-40{transform: scale(0.4)}
+	.scale-xl-50{transform: scale(0.5)}
+	.scale-xl-60{transform: scale(0.6)}
+	.scale-xl-70{transform: scale(0.7)}
+	.scale-xl-75{transform: scale(0.75)}
+	.scale-xl-80{transform: scale(0.8)}
+	.scale-xl-90{transform: scale(0.9)}
+	.scale-xl-100{transform: scale(1.0)}
+	.scale-xl-110{transform: scale(1.1)}
+	.scale-xl-120{transform: scale(1.2)}
+	.scale-xl-125{transform: scale(1.25)}
+	.scale-xl-130{transform: scale(1.3)}
+	.scale-xl-140{transform: scale(1.4)}
+	.scale-xl-150{transform: scale(1.5)}
+	.scale-xl-160{transform: scale(1.6)}
+	.scale-xl-170{transform: scale(1.7)}
+	.scale-xl-175{transform: scale(1.75)}
+	.scale-xl-180{transform: scale(1.8)}
+	.scale-xl-190{transform: scale(1.9)}
+	.scale-xl-200{transform: scale(2.0)}
+	.scale-xl-225{transform: scale(2.25)}
+	.scale-xl-250{transform: scale(2.5)}
+	.scale-xl-275{transform: scale(2.75)}
+	.scale-xl-300{transform: scale(3.0)}
+	.scale-xl-400{transform: scale(4.0)}
+	.scale-xl-500{transform: scale(5.0)}
+	.scale-xl-600{transform: scale(6.0)}
+	.scale-xl-750{transform: scale(7.5)}
+	.scale-xl-800{transform: scale(8.0)}
+	.scale-xl-900{transform: scale(9.0)}
+	.scale-xl-1000{transform: scale(10.0)}
+
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+	.h-xxl-auto{height: auto}
+	.h-xxl-0{height: 0%}
+	.h-xxl-5{height: 5%}
+	.h-xxl-10{height: 10%}
+	.h-xxl-15{height: 15%}
+	.h-xxl-20{height: 20%}
+	.h-xxl-25{height: 25%}
+	.h-xxl-30{height: 30%}
+	.h-xxl-40{height: 40%}
+	.h-xxl-50{height: 50%}
+	.h-xxl-60{height: 60%}
+	.h-xxl-70{height: 70%}
+	.h-xxl-75{height: 75%}
+	.h-xxl-80{height: 80%}
+	.h-xxl-90{height: 90%}
+	.h-xxl-100{height: 100%}
+
+	.w-xxl-auto{width: auto}
+	.w-xxl-0{width: 0%}
+	.w-xxl-5{width: 5%}
+	.w-xxl-10{width: 10%}
+	.w-xxl-15{width: 15%}
+	.w-xxl-20{width: 20%}
+	.w-xxl-25{width: 25%}
+	.w-xxl-30{width: 30%}
+	.w-xxl-40{width: 40%}
+	.w-xxl-50{width: 50%}
+	.w-xxl-60{width: 60%}
+	.w-xxl-70{width: 70%}
+	.w-xxl-75{width: 75%}
+	.w-xxl-80{width: 80%}
+	.w-xxl-90{width: 90%}
+	.w-xxl-100{width: 100%}
+
+	.font-xxl-auto{font-size: auto}
+	.font-xxl-0{font-size: 0em}
+	.font-xxl-5{font-size: 0.05em}
+	.font-xxl-10{font-size: 0.10em}
+	.font-xxl-15{font-size: 0.15em}
+	.font-xxl-20{font-size: 0.2em}
+	.font-xxl-25{font-size: 0.25em}
+	.font-xxl-30{font-size: 0.3em}
+	.font-xxl-40{font-size: 0.4em}
+	.font-xxl-50{font-size: 0.5em}
+	.font-xxl-60{font-size: 0.6em}
+	.font-xxl-70{font-size: 0.7em}
+	.font-xxl-75{font-size: 0.75em}
+	.font-xxl-80{font-size: 0.8em}
+	.font-xxl-90{font-size: 0.9em}
+	.font-xxl-100{font-size: 1em}
+	.font-xxl-110{font-size: 1.1em}
+	.font-xxl-120{font-size: 1.2em}
+	.font-xxl-130{font-size: 1.3em}
+	.font-xxl-140{font-size: 1.4em}
+	.font-xxl-125{font-size: 1.25em}
+	.font-xxl-100{font-size: 1em}
+	.font-xxl-150{font-size: 1.5em}
+	.font-xxl-160{font-size: 1.6em}
+	.font-xxl-170{font-size: 1.7em}
+	.font-xxl-175{font-size: 1.75em}
+	.font-xxl-180{font-size: 1.8em}
+	.font-xxl-190{font-size: 1.9em}
+	.font-xxl-200{font-size: 2em}
+	.font-xxl-225{font-size: 2.25em}
+	.font-xxl-250{font-size: 2.5em}
+	.font-xxl-275{font-size: 2.75em}
+	.font-xxl-300{font-size: 3em}
+	.font-xxl-400{font-size: 4em}
+	.font-xxl-500{font-size: 5em}
+	.font-xxl-600{font-size: 6em}
+	.font-xxl-750{font-size: 7.5em}
+	.font-xxl-800{font-size: 8em}
+	.font-xxl-900{font-size: 9em}
+	.font-xxl-1000{font-size: 10em}
+
+	.scale-xxl-0{transform: scale(0.0)}
+	.scale-xxl-5{transform: scale(0.05)}
+	.scale-xxl-10{transform: scale(0.10)}
+	.scale-xxl-15{transform: scale(0.15)}
+	.scale-xxl-20{transform: scale(0.20)}
+	.scale-xxl-25{transform: scale(0.25)}
+	.scale-xxl-30{transform: scale(0.3)}
+	.scale-xxl-40{transform: scale(0.4)}
+	.scale-xxl-50{transform: scale(0.5)}
+	.scale-xxl-60{transform: scale(0.6)}
+	.scale-xxl-70{transform: scale(0.7)}
+	.scale-xxl-75{transform: scale(0.75)}
+	.scale-xxl-80{transform: scale(0.8)}
+	.scale-xxl-90{transform: scale(0.9)}
+	.scale-xxl-100{transform: scale(1.0)}
+	.scale-xxl-110{transform: scale(1.1)}
+	.scale-xxl-120{transform: scale(1.2)}
+	.scale-xxl-125{transform: scale(1.25)}
+	.scale-xxl-130{transform: scale(1.3)}
+	.scale-xxl-140{transform: scale(1.4)}
+	.scale-xxl-150{transform: scale(1.5)}
+	.scale-xxl-160{transform: scale(1.6)}
+	.scale-xxl-170{transform: scale(1.7)}
+	.scale-xxl-175{transform: scale(1.75)}
+	.scale-xxl-180{transform: scale(1.8)}
+	.scale-xxl-190{transform: scale(1.9)}
+	.scale-xxl-200{transform: scale(2.0)}
+	.scale-xxl-225{transform: scale(2.25)}
+	.scale-xxl-250{transform: scale(2.5)}
+	.scale-xxl-275{transform: scale(2.75)}
+	.scale-xxl-300{transform: scale(3.0)}
+	.scale-xxl-400{transform: scale(4.0)}
+	.scale-xxl-500{transform: scale(5.0)}
+	.scale-xxl-600{transform: scale(6.0)}
+	.scale-xxl-750{transform: scale(7.5)}
+	.scale-xxl-800{transform: scale(8.0)}
+	.scale-xxl-900{transform: scale(9.0)}
+	.scale-xxl-1000{transform: scale(10.0)}
+
+}
+
+/*// 4K devices (TVs, 4k and up)*/
+@media (min-width: 2160px) {
+	.h-4k-auto{height: auto}
+	.h-4k-0{height: 0%}
+	.h-4k-5{height: 5%}
+	.h-4k-10{height: 10%}
+	.h-4k-15{height: 15%}
+	.h-4k-20{height: 20%}
+	.h-4k-25{height: 25%}
+	.h-4k-30{height: 30%}
+	.h-4k-40{height: 40%}
+	.h-4k-50{height: 50%}
+	.h-4k-60{height: 60%}
+	.h-4k-70{height: 70%}
+	.h-4k-75{height: 75%}
+	.h-4k-80{height: 80%}
+	.h-4k-90{height: 90%}
+	.h-4k-100{height: 100%}
+
+	.w-4k-auto{width: auto}
+	.w-4k-0{width: 0%}
+	.w-4k-5{width: 5%}
+	.w-4k-10{width: 10%}
+	.w-4k-15{width: 15%}
+	.w-4k-20{width: 20%}
+	.w-4k-25{width: 25%}
+	.w-4k-30{width: 30%}
+	.w-4k-40{width: 40%}
+	.w-4k-50{width: 50%}
+	.w-4k-60{width: 60%}
+	.w-4k-70{width: 70%}
+	.w-4k-75{width: 75%}
+	.w-4k-80{width: 80%}
+	.w-4k-90{width: 90%}
+	.w-4k-100{width: 100%}
+
+	.font-4k-auto{font-size: auto}
+	.font-4k-0{font-size: 0em}
+	.font-4k-5{font-size: 0.05em}
+	.font-4k-10{font-size: 0.10em}
+	.font-4k-15{font-size: 0.15em}
+	.font-4k-20{font-size: 0.2em}
+	.font-4k-25{font-size: 0.25em}
+	.font-4k-30{font-size: 0.3em}
+	.font-4k-40{font-size: 0.4em}
+	.font-4k-50{font-size: 0.5em}
+	.font-4k-60{font-size: 0.6em}
+	.font-4k-70{font-size: 0.7em}
+	.font-4k-75{font-size: 0.75em}
+	.font-4k-80{font-size: 0.8em}
+	.font-4k-90{font-size: 0.9em}
+	.font-4k-100{font-size: 1em}
+	.font-4k-110{font-size: 1.1em}
+	.font-4k-120{font-size: 1.2em}
+	.font-4k-130{font-size: 1.3em}
+	.font-4k-140{font-size: 1.4em}
+	.font-4k-125{font-size: 1.25em}
+	.font-4k-100{font-size: 1em}
+	.font-4k-150{font-size: 1.5em}
+	.font-4k-160{font-size: 1.6em}
+	.font-4k-170{font-size: 1.7em}
+	.font-4k-175{font-size: 1.75em}
+	.font-4k-180{font-size: 1.8em}
+	.font-4k-190{font-size: 1.9em}
+	.font-4k-200{font-size: 2em}
+	.font-4k-225{font-size: 2.25em}
+	.font-4k-250{font-size: 2.5em}
+	.font-4k-275{font-size: 2.75em}
+	.font-4k-300{font-size: 3em}
+	.font-4k-400{font-size: 4em}
+	.font-4k-500{font-size: 5em}
+	.font-4k-600{font-size: 6em}
+	.font-4k-750{font-size: 7.5em}
+	.font-4k-800{font-size: 8em}
+	.font-4k-900{font-size: 9em}
+	.font-4k-1000{font-size: 10em}
+
+	.scale-4k-0{transform: scale(0.0)}
+	.scale-4k-5{transform: scale(0.05)}
+	.scale-4k-10{transform: scale(0.10)}
+	.scale-4k-15{transform: scale(0.15)}
+	.scale-4k-20{transform: scale(0.20)}
+	.scale-4k-25{transform: scale(0.25)}
+	.scale-4k-30{transform: scale(0.3)}
+	.scale-4k-40{transform: scale(0.4)}
+	.scale-4k-50{transform: scale(0.5)}
+	.scale-4k-60{transform: scale(0.6)}
+	.scale-4k-70{transform: scale(0.7)}
+	.scale-4k-75{transform: scale(0.75)}
+	.scale-4k-80{transform: scale(0.8)}
+	.scale-4k-90{transform: scale(0.9)}
+	.scale-4k-100{transform: scale(1.0)}
+	.scale-4k-110{transform: scale(1.1)}
+	.scale-4k-120{transform: scale(1.2)}
+	.scale-4k-125{transform: scale(1.25)}
+	.scale-4k-130{transform: scale(1.3)}
+	.scale-4k-140{transform: scale(1.4)}
+	.scale-4k-150{transform: scale(1.5)}
+	.scale-4k-160{transform: scale(1.6)}
+	.scale-4k-170{transform: scale(1.7)}
+	.scale-4k-175{transform: scale(1.75)}
+	.scale-4k-180{transform: scale(1.8)}
+	.scale-4k-190{transform: scale(1.9)}
+	.scale-4k-200{transform: scale(2.0)}
+	.scale-4k-225{transform: scale(2.25)}
+	.scale-4k-250{transform: scale(2.5)}
+	.scale-4k-275{transform: scale(2.75)}
+	.scale-4k-300{transform: scale(3.0)}
+	.scale-4k-400{transform: scale(4.0)}
+	.scale-4k-500{transform: scale(5.0)}
+	.scale-4k-600{transform: scale(6.0)}
+	.scale-4k-750{transform: scale(7.5)}
+	.scale-4k-800{transform: scale(8.0)}
+	.scale-4k-900{transform: scale(9.0)}
+	.scale-4k-1000{transform: scale(10.0)}
+
+}

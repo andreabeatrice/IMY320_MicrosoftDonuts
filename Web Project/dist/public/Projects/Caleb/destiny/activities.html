@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>S4 Play Destiny 2</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+		<style>
+body {background-image: linear-gradient(to bottom, #1d1823, #221d2d, #3c304b); color: white;}
+		h1 {text-align: right; margin-right: 1em;}
+		#header
+		{
+			background-image: linear-gradient(to right, #322e64, #8374bd, #6160a9);
+			border: solid white 2px;
+			margin: 0px;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+			font-size: 2.5em;
+			color: white;
+			font-family: Garamond, serif;
+		}
+		h2 {text-align: center; text-decoration: underline; font-size: 30px;}
+		div {text-align: center; margin-bottom: 10%}
+
+		.character
+		{
+			height: 50em;
+			margin-bottom: -6em;
+			animation: breathe 4s linear infinite;
+		}
+
+		.character:hover
+		{
+			height: 55em;
+			animation: breathe 1s linear infinite;
+		}
+
+		.more-info
+		{
+		  font-size: 4em;
+		  padding: 10px;
+		}
+
+		@keyframes breathe
+		{
+  			0% {transform: scale(1);}
+			25% {transform: scale(1.04);}
+			50% {transform: scale(1);}
+			100% {transform: scale(1);}
+		}
+
+		button
+		{
+			background-image: linear-gradient(to right, #6160a9, #b3a4fd, #6160a9);
+			width: 60%;
+			font-size: 320%;
+			border: 0.2em solid ivory;
+			border-radius: 25%;
+			animation: wiggle 5s linear infinite;
+		}
+
+		@keyframes wiggle
+		{
+			0% {transform: rotate(0deg);}
+  			85% {transform: rotate(0deg);}
+  			90% {transform: rotate(10deg);}
+  			95% {transform: rotate(-10deg);}
+  			100% {transform: rotate(0deg);}
+		}
+
+		.dropdown
+		{
+			padding-right: 40px;
+		  float: left;
+		  bottom: 3.3em;
+		  margin-left: 20px;
+		  position: relative;
+		}
+
+		a
+		{
+			text-decoration: none;
+		}
+
+		ul
+		{
+			margin-top: 2px;
+			margin-bottom: 2px;
+		}
+
+		li
+		{
+			border: 3px solid white;
+			list-style-type: none;
+			margin-left: -0.5em;
+			margin-bottom: 10px;
+		}
+
+		.dropdown-content
+		{
+		  display: none;
+		  position: absolute;
+		  background-color: #a592b7;
+		  min-width: 100px;
+		  font-size: 1.4em;
+		  padding: 5px 10px;
+		}
+
+		.dropdown:hover
+		{
+		  transform: rotate(1);
+		}
+
+		.dropdown:hover .dropdown-content {
+		  display: block;
+		}
+
+		.engram:active {
+		   animation: fire 1s linear infinite;
+		}
+
+		@keyframes fire
+		{
+			0% {}
+  			5% {transform: rotate(40deg);}
+  			10% {transform: rotate(-40deg);}
+  			15% {transform: rotate(40deg);}
+  			20% {transform: rotate(0deg);}
+  			25% {transform: rotate(40deg);}
+  			30% {transform: rotate(0deg);}
+  			95% {transform: rotate(-5deg);}
+  			100% {transform: rotate(0deg);}
+		}
+		</style>
+		<script type="text/javascript">
+			var myClass = localStorage.getItem('myClass');
+			console.log(myClass);
+			localStorage.setItem('myClass', myClass);
+		</script>
+	</head>
+	<body>
+		<div id="header">
+			<h1>Step 7: Play Core Activities</h1>
+			<span class="dropdown">
+			<i class="material-icons" style="font-size: 2em;">menu</i>
+			<div class="dropdown-content">
+				<ul>
+					<li><a href="classes.html">Classes</a></li>
+					<li><a href="tutorial.html">Tutorial</a></li>
+					<li><a href="subclasses.html">Subclasses</a></li>
+					<li><a href="guns.html">Guns</a></li>
+					<li><a href="exotic.html">Exotic</a></li>
+					<li><a href="upgrade.html">Upgrade</a></li>
+					<li><a href="activities.html">Activities</a></li>
+					<li><a href="../index.html"><img src="../img/logo.png"></a></li>
+				</ul>
+			</div>
+		</span>
+		</div>
+		<h2></h2>
+		<br/>
+
+		<div>
+			<img src="img/activities.png" style="width: 60em;">
+			<br/>
+			<br/>
+			<p style="font-size: 2em;"><b>What are core activities?</b><br/>
+				These are playlists that you will do regularly to progress in the game and earn better gear.<br/>
+				There are three of these activities. <b>Strikes</b> have you fighting through hoardes of enemies with two friends to get to a boss fight.
+				<b>Gambit</b> has you and three friends competing with other players to kill the most amount of enemies and a boss within a limited time.
+				Lastly, <b>Crucible</b> pits you and up to seven friends against other players in team deathmatches and other PVP (Player Versus Player) content.
+			Click the button repeatedly to grind out these core activities and move on!</p>
+			<br/>
+			<button class="engram" onclick="myFunc()">Grind!</button>
+		</div>
+
+		<div>
+			<div id="point"></div>
+			<figcaption id="figClass" style="margin: 0 auto; max-width: 15em; font-size: 2em; position: relative; color: black; background-color: white; border: solid black 2px; border-radius: 20px; padding: 6px;">"Make no mistake, I'm only in it for the loot."</figcaption>
+			<br/>
+			<img id="imgClass" src="img/hunter.png" class="character">
+		</div>
+	</body>
+
+	<script type="text/javascript">
+		if (myClass == 2)
+		{
+			document.getElementById('imgClass').src="img/titan.png";
+			document.getElementById('figClass').innerHTML='*Crayon munching intensifies*';
+		} else if (myClass == 3)
+		{
+			document.getElementById('imgClass').src="img/warlock.png";
+			document.getElementById('imgClass').style="transform: scaleX(-1);";
+			document.getElementById('figClass').innerHTML='"Repetition builds skill. Skill leads to mastery."';
+		}
+
+		function myFunc()
+		{
+			setTimeout(function () {
+		        window.location.href = "congrats.html";
+		    }, 3200);
+		}
+	</script>
+</html>

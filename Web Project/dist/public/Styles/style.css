@@ -1,0 +1,222 @@
+:root {
+    --blue-jeans: #00A6FF;
+    --eggshell: #F4EBD9;
+    --main-bg-colour: #F4EBD9;
+    --chocolate: #743307;
+    --shocking-pink: #EF38BF;
+    --eerie-black: #1c1c1c;
+    --main-text-colour: #1c1c1c;
+}
+
+@font-face {
+    font-family: 'RobotoMono'; /*a name to be used later robota sans*/
+    src: url('fonts/RobotoMono-VariableFont_wght.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'RampartOne'; /*a name to be used later robota sans*/
+    src: url('fonts/RampartOne-Regular.ttf'); /*URL to font*/
+}
+
+body {
+    color: var(--main-text-colour);
+    background-color: var(--main-bg-colour);
+
+    font-family: 'RobotoMono', sans-serif;
+}
+
+h1{
+    font-family: 'RobotoMono', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+}
+
+h2 {
+    font-family: 'RampartOne', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+    line-height: 1.5em;
+    color: var(--chocolate);
+}
+
+nav  {
+    margin-top: 5em;
+    margin-left: 6em;
+
+  }
+
+h3 {
+    font-family: 'RobotoMono', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
+    opacity: 70%;
+}
+
+.nl, .nl:visited {
+    color: var(--main-text-colour);
+    text-decoration: none;
+}
+
+.nl:hover {
+    color: var(--blue-jeans);
+    text-decoration: none;
+}
+
+ul>li {
+    font-size: larger;
+    list-style-type: none;
+    line-height: 5em;
+}
+
+@keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+.cursor {
+    animation: blink 2s linear infinite;
+
+}
+
+#desc {
+  font-size: x-large;
+}
+
+#abtus{
+  margin-bottom: -1.5em ;
+}
+
+
+/*Button Hover Animation ?*/
+button[class^="grow"] {
+    background: #F4EBD9;
+    color: var(--main-text-colour);
+    border: 2px solid var(--main-text-colour);
+    padding: 0.85em 0.75em;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  button[class^="grow"]:hover {
+    border: 2px solid var(--main-bg-colour);
+    color: var(--main-bg-colour)
+  }
+  button[class^="grow"]::after {
+    content: "";
+    background: var(--blue-jeans);
+    position: absolute;
+    z-index: -1;
+    padding: 0.85em 0.75em;
+    display: block;
+  }
+button[class^="grow"]::after {
+    transition: all 0.6s ease;
+  }
+  button[class^="grow"]:hover::after {
+    transition: all 0.6s ease-out;
+  }
+  button.grow_box::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scale(0, 0);
+  }
+  button.grow_box:hover::after {
+    transform: scale(1, 1);
+  }
+  button.grow_ellipse::after {
+    border-radius: 50%;
+    left: -50%;
+    right: -50%;
+    top: -150%;
+    bottom: -150%;
+    line-height: 8.34em;
+    transform: scale(0, 0);
+  }
+  button.grow_ellipse:hover::after {
+    transform: scale(1, 1);
+  }
+
+  .featured-pink {
+    background-color: rgba(239, 56, 191, 0.3);
+    padding: 1.5rem;
+    
+  }
+
+  .featured-blue {
+    background-color: rgba(0, 166, 255, 0.3);
+    padding: 1.5rem;
+    
+  }
+
+  .project-link, .email-link {
+    color: #1c1c1c;
+    text-decoration: underline;
+  }
+
+  .project-link:hover {
+    text-decoration: underline;
+    color: white;
+  }
+
+  .email-link:hover {
+    text-decoration: underline;
+    color: var(--blue-jeans);
+  }
+
+  .card {
+    flex-direction: row;
+  }
+  .card img {
+    width: 8em;
+    
+  }
+
+#FallingDonuts {
+  width: 100%;
+  position:absolute;
+  z-index:-999;
+}
+
+.donutImg{
+  cursor: pointer;
+}
+
+/* Icons */
+
+.socialmedia {
+  line-height: 2em;
+  color:#fff;
+  background: #DB6E82;
+  border-radius:4px;
+  text-align:center;
+  text-decoration:none;
+  font-family:fontawesome;
+  position: relative;
+  display: inline-block;
+  padding: 2%;
+  width:40px;
+  -o-transition:all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+   -webkit-font-smoothing: antialiased;
+}
+
+.socialmedia:hover {
+  background: #ef92a3;
+  color: #F4EBD9;
+}
+
+#facebook:hover, #instagram:hover, #github:hover{
+  color: #F4EBD9;
+}
+
+i:hover {
+  color: #F4EBD9;
+}

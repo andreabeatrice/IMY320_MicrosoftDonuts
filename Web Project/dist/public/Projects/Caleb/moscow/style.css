@@ -1,0 +1,91 @@
+body
+{
+	background-image: url("rsc/background-website.png");
+	/*margin-left: 200px;*/
+	z-index: 0;
+}
+
+.e6-centered
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.e6-white
+{
+	background: rgb(34,193,195);
+	background: linear-gradient(0deg, rgba(34,193,195,0) 0%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 100%);
+}
+
+#logo-header
+{
+	
+}
+
+.sidenav
+{
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-image: url("rsc/background-inverse.png");
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.sidenav-right
+{
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-image: url("rsc/background-inverse2.png");
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+@keyframes glowing
+{
+	0%
+	{
+		background-color: none;
+	}
+	25%
+	{
+		background-color: red;
+	}
+	100%
+	{
+		background-color: none;
+	}
+}
+
+#e6-active
+{
+	animation-name: glowing;
+	padding-left: 10px;
+	padding-right: 10px;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#e6-video
+{
+	z-index: -1;
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  /*height: 100%;
+  width: 100%;*/
+/*  min-width: 90%; 
+  min-height: 90%; 
+  width: auto;
+  height: auto;*/
+}

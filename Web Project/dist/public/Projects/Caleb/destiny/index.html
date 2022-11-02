@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Start Destiny 2</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+	<style>
+		body {background-image: linear-gradient(to bottom, #1d1823, #221d2d, #3c304b); color: white;}
+		h1 {text-align: center; margin-right: 1em;}
+		#header
+		{
+			background-image: linear-gradient(to right, #322e64, #8374bd, #6160a9);
+			border: solid white 2px;
+			margin: 0px;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+			font-size: 2.5em;
+			color: white;
+			font-family: Garamond, serif;
+		}
+		h2 {text-align: center; text-decoration: underline; font-size: 30px;}
+		div {text-align: center; margin-bottom: 10%}
+
+		.character
+		{
+			animation: breathe 2.5s linear infinite;
+		}
+
+		.character:hover
+		{
+			
+		}
+
+		.more-info
+		{
+		  font-size: 4em;
+		  padding: 10px;
+		}
+
+		@keyframes breathe
+		{
+  			0% {transform: translate(0px,0px);}
+			40% {transform: translate(0px, -30px);}
+			50% {transform: translate(0px, -35px);}
+			90% {transform: translate(0px,-5px);}
+			100% {transform: translate(0px,0px);}
+		}
+
+		button
+		{
+			background-image: linear-gradient(to right, #6160a9, #b3a4fd, #6160a9);
+			width: 60%;
+			font-size: 320%;
+			border: 0.2em solid ivory;
+			border-radius: 25%;
+			animation: wiggle 5s linear infinite;
+		}
+
+		@keyframes wiggle
+		{
+			0% {transform: rotate(0deg);}
+  			85% {transform: rotate(0deg);}
+  			90% {transform: rotate(10deg);}
+  			95% {transform: rotate(-10deg);}
+  			100% {transform: rotate(0deg);}
+		}
+
+		.dropdown
+		{
+			padding-right: 40px;
+		  float: left;
+		  bottom: 3.3em;
+		  margin-left: 20px;
+		  position: relative;
+		}
+
+		a
+		{
+			text-decoration: none;
+		}
+
+		ul
+		{
+			margin-top: 2px;
+			margin-bottom: 2px;
+		}
+
+		li
+		{
+			border: 3px solid white;
+			list-style-type: none;
+			margin-left: -0.5em;
+			margin-bottom: 10px;
+		}
+
+		.dropdown-content
+		{
+		  display: none;
+		  position: absolute;
+		  background-color: #a592b7;
+		  min-width: 100px;
+		  font-size: 1.4em;
+		  padding: 5px 10px;
+		}
+
+		.dropdown:hover
+		{
+		  transform: rotate(1);
+		}
+
+		.dropdown:hover .dropdown-content {
+		  display: block;
+		}
+	</style>
+</head>
+<body onload="doAlert()">
+	<div id="header">
+		<h1>HOW TO START PLAYING <b>DESTINY 2</b></h1>
+	</div>
+
+	<h2 style="font-size: 3em;">EYES UP, GUARDIAN!<br/>Click the button to begin</h2>
+	<br/>
+
+	<div>
+		<img src="img/ghost.png" style="width: 40em;" class="character">
+		<br/>
+		<br/>
+		<br/><br/>
+		<button onclick="location.href='classes.html'"> Hit the Jump! </button>
+	</div>
+
+	<br/>
+		<br/><br/>
+		<br/><br/>
+		<br/><br/>
+		<br/><br/>
+		<br/><br/>
+		<br/>
+		<a href="../index.html"><img src="../img/logo.png"></a>
+
+		<script type="text/javascript">
+			function doAlert()
+			{
+				//setTimeout(function ()
+				//{
+				//	alert("please press F12, and then press Ctrl + Shift + M to view this website properly.");
+				//}, 500);
+			}
+		</script>
+</body>
+</html>

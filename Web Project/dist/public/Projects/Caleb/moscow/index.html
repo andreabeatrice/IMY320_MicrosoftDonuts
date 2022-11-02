@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>STONE SOUR</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body onload="doAlert()">
+	<div id="e6-fade">
+		<!-- <div class="sidenav"></div> -->
+		<!-- <div class="sidenav-right"></div> -->
+
+		<div class="e6-white">
+			<img id="logo-header" class="e6-centered" src="rsc/logo.png"/>
+		</div>
+		<div class="e6-centered">
+
+			<div>
+				<img style="width: 300px; float: left;" src="rsc/icon.png"/>
+			</div>
+
+			<div style="color: #f0e3b9; float: right; font-family: 'Trebuchet MS', sans-serif; font-size: 20px; right: 0px;">
+				<ul style="list-style-type:none;">
+					<li> YSIF (instrumental) </li>
+					<li> Taipei Person/Allah Tea </li>
+					<li> Knievel Has Landed </li>
+					<li> Hydrograd </li>
+					<li id="e6-active" onclick="playvideo()">▶ Song #3</li>
+					<li> Fabuless </li>
+					<li> The Witness Trees </li>
+					<li> Rose Red Violent Blue (This Song Is Dumb & So Am I) </li>
+					<li> Thank God It's Over </li>
+					<li> St. Marie </li>
+					<li> Mercy </li>
+					<li> Whiplash Pants </li>
+					<li> Friday Knights </li>
+					<li> Somebody Stole My Eyes </li>
+					<li> When the Fever Broke </li>
+					<li><a href="../../../index.html"><img src="../img/logo.png"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>	
+	
+	<div id="e6-video">
+		<video id="myvid" autoplay height="970em">
+			<source src="song3-1min.mp4" type="video/mp4">
+		</video>
+	</div>
+	
+</body>
+</html>
+
+<script type="text/javascript">
+
+	function doAlert()
+	{
+		setTimeout(function ()
+		{
+			//alert("This page looks better in fullscreen! Press F11");
+		}, 500);
+	}
+
+
+	function playvideo()
+	{
+		for (var i = 10; i >= 0; i--)
+		{
+			var j = i/10;
+			// alert(j);
+			document.getElementById("e6-fade").style.opacity = i;
+			setTimeout(200);
+		}
+		document.getElementById("myvid").play();
+		document.getElementById("myvid").controls = true;
+	}
+</script>

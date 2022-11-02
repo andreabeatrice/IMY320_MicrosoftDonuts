@@ -1,0 +1,376 @@
+html
+{
+   scroll-behavior: smooth;
+}
+
+body
+{
+   /*background-image: url("img/space-stars.gif");*/
+   background: linear-gradient(90deg, rgba(81,08,130,1) 0%, rgba(135,16,35,1) 37%, rgba(155,17,17,1) 50%, rgba(104,10,31,1) 63%, rgba(0,0,107,1) 100%);
+   /* background-image: url("img/wallpaper.png"); */
+   background-repeat: no-repeat;
+   /* background-size: auto; */
+   background-attachment: fixed;
+   margin:0;
+   font:normal 75% Arial, Helvetica, sans-serif;
+   
+   background-size: 100vw 100vh;
+}
+
+.sideDiv
+{
+   width: 100%;
+   top: 0;
+   background-color: #111;
+   position: absolute;
+   height: 1px;
+   box-shadow: 0 0 10px #fff,0 0 5px #fff,0 0 10px #bc13fe,0 0 12px #bc13fe,0 0 10px #bc13fe,inset 0 0 13px #bc13fe;
+}
+
+
+.sideDiv2
+{
+   width: 100%;
+   top: 40px;
+   background-color: #111;
+   position: absolute;
+   height: 1px;
+   box-shadow: 0 0 10px #fff,0 0 5px #fff,0 0 10px #bc13fe,0 0 12px #bc13fe,0 0 10px #bc13fe,inset 0 0 13px #bc13fe;
+}
+
+
+.sideDiv3
+{
+   width: 100%;
+   top: 40px;
+   background-color: #111;
+   position: absolute;
+   height: 1px;
+   box-shadow: 0 0 10px #fff,0 0 5px #fff,0 0 10px #fe4213,0 0 12px #fe4213,0 0 10px #fe4213,inset 0 0 13px #fe4213;
+}
+
+
+.centerDiv
+{
+   padding-top: 5px;
+   padding-bottom: 5px;
+   margin-left: 30%;
+   width: 40%;
+   background-color: rgba(8, 2, 22, 0.6);
+   border-radius: 20%;
+}
+
+.centerDivNoBG
+{
+   margin-top: 80px;
+   margin-left: 40%;
+   padding: 5px;
+   position: absolute;
+   width: 20%;
+   background-color: rgba(8, 2, 22, 0.6);
+   border-radius: 50%;
+}
+
+
+.centerDivNoBG2
+{
+   margin-top: 80px;
+   margin-left: 40%;
+   padding: 5px;
+   position: absolute;
+   width: 20%;
+   top: 180%;
+   box-shadow: 0 0 10px #fff,0 0 5px #fff,0 0 10px #fe4213,0 0 12px #fe4213,0 0 10px #fe4213,inset 0 0 13px #fe4213;
+   /* border-radius: 20%; */
+}
+
+.centerDivArrow
+{
+   margin-top: 1%;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   margin-left: 45%;
+   width: 10%;
+   background-color: rgba(8, 2, 22, 0.6);
+   border-radius: 50%;
+}
+
+.centerDivArrow2
+{
+   margin-top: 1%;
+   z-index: 40;
+   padding: 10px;
+   margin-left: 85%;
+   width: 3%;
+   height: 3%;
+   position: absolute;
+   top: 190%;
+   background-color: rgba(8, 2, 22, 0.6);
+   border-radius: 50%;
+}
+
+
+.arrow
+{
+   color: yellow;
+   border-radius: 50%;
+   box-shadow: 0 0 10px #fff,0 0 5px #fff,0 0 10px #bc13fe,0 0 12px #bc13fe,0 0 10px #bc13fe,inset 0 0 13px #bc13fe;
+   animation-name: colourful;
+   animation-duration: 5s;
+   animation-iteration-count: infinite;
+}
+
+p
+{
+   font-family: Tangerine;
+}
+
+canvas
+{
+   display: block;
+   vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+#particles-js
+{
+   z-index: 1;
+   top: 100%;   
+   position:absolute;
+   width: 100%; height: 100%;
+}
+
+#bg-dark
+{
+	z-index: -2;
+	background-color: rgba(8, 2, 22, 0.6);
+	position: fixed;
+	top: 0%; /* Header Height */
+	bottom: 0px; /* Footer Height */
+	width: 100%;
+	animation: dark-in 3s;
+}
+
+
+@keyframes dark-in
+{
+	0%{top: 100%;}
+	15%{top: 100%;}
+	100%{top: 0%;}
+}
+
+@font-face
+{
+   font-family: Amsterdam;
+   src: url(fonts/Amsterdam.ttf);
+}
+
+h1
+{
+   font-family: Amsterdam;
+   color: white;
+   text-align: center;
+   font-size: 50px;
+}
+
+h2
+{
+   font-family: Amsterdam;
+   color: white;
+   text-align: center;
+   font-size: 30px;
+}
+
+#circle-orbit-container
+{
+   z-index: -1;
+   margin-left: 30%;
+   margin-top: 5%;
+}
+
+#picture
+{
+   position: absolute;
+   z-index: 20;
+}
+
+#picture2
+{
+   position: absolute;
+   z-index: 20;
+}
+
+img
+{
+   -webkit-filter: drop-shadow(10px 10px 10px #111);
+   filter: drop-shadow(10px 10px 10px #111);
+   /* animation-name: hover; */
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+}
+
+#iwannakms
+{
+   box-shadow: 0 0 10px #fff,0 0 5px #fff,0 0 10px #bc13fe,0 0 12px #bc13fe,0 0 10px #bc13fe,inset 0 0 13px #bc13fe;
+   width: 40%;
+}
+
+
+.left
+{
+   z-index: 9;
+   width: 15%;
+
+   position: absolute;
+   left: 30vh;
+   top: 115vh;
+
+   animation-name: hover2;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+/*   -webkit-animation: spin-right 10s linear infinite;
+   animation: spin-left 10s linear infinite;*/
+}
+
+
+.middle
+{
+   z-index: 20;
+   width: 30%;
+
+   position: absolute;
+   left: 35vw;
+   top: 150vh;
+
+   animation-name: hover;
+   animation-duration: 6s;
+   animation-iteration-count: infinite;
+/*   -webkit-animation: spin-right 10s linear infinite;
+   animation: spin-left 22s linear infinite;*/
+}
+
+
+.cloud3
+{
+   animation-name: hover;
+   animation-duration: 6s;
+   animation-iteration-count: infinite;
+}
+
+
+.right
+{
+   z-index: 10;
+   width: 15%;
+
+   position: absolute;
+   left: 140vh;
+   top: 115vh;
+
+   animation-name: hover2;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+/*   -webkit-animation: spin-right 10s linear infinite;
+   animation: spin-left 30s linear infinite;*/
+}
+
+
+/* ---------- Container for the orbiting circles animation ---------- */
+#circle-orbit-container {
+   z-index: 2;
+  position: relative;
+  top: 25px;
+  left: 25px;
+  height: 800px;
+  width: 800px;
+}
+
+/* ---------- Inner orbit - This is the circles closest to the central point ---------- */
+#inner-orbit {
+  position: absolute;
+  top: 270px;
+  left: 270px;
+  width: 300px;
+  height: 300px;
+  border: 2px #9A437F solid;
+  border-radius: 100%;
+  -webkit-animation: spin-right 10s linear infinite;
+  animation: spin-right 10s linear infinite;
+}
+
+
+/* ---------- Middle orbit - This is the circles second closest to the central point ---------- */
+#middle-orbit {
+  position: absolute;
+  top: 120px;
+  left: 120px;
+  width: 600px;
+  height: 600px;
+  border: 2px #4A437F solid;
+  border-radius: 100%;
+  -webkit-animation: spin-right 15s linear infinite;
+  animation: spin-right 22s linear infinite;
+}
+
+
+/* ---------- Outer orbit - This is the circles furthest away from the central point ---------- */
+#outer-orbit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 850px;
+  height: 850px;
+  border: 2px #6A43AF solid;
+  border-radius: 100%;
+  -webkit-animation: spin-right 20s linear infinite;
+  animation: spin-right 30s linear infinite;
+}
+
+
+
+
+
+
+/* The animation code */
+@keyframes hover {
+  0%   {padding-top: 0px;}
+  50%  {padding-top: 30px;}
+  100% {padding-top: 0px;}
+}
+@keyframes hover2 {
+   0%   {padding-top: 0px;}
+   50%  {padding-top: 15px;}
+   100% {padding-top: 0px;}
+}
+@keyframes colourful {
+   0%   {colour: yellow;}
+   33%  {color: orange;}
+   66% {color: purple;}
+   100%   {colour: yellow;}
+ }
+
+
+
+/* ---------- Animation ---------- */
+@-webkit-keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+/* ---------- Animation ---------- */
+@-webkit-keyframes spin-left {
+  100% {
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+

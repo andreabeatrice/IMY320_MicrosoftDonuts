@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<title>Caleb Portfolio</title>
+	<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <link rel="icon" href="img/logo.png">
+</head>
+<body onscroll="removeBubble()">
+
+	<br/>
+	<div class="centerDiv">
+		<h1 style="text-decoration: underline;">Caleb Groeneveld</h1>
+		<h2>A.K.A.  Espresso-6</h2>
+		<p style="font-size: 30px; color:white; text-align:center;">
+			Gamer ♦ Coder ♦ Student ♦ Est.2000
+		</p>
+		<hr/>
+		<p style="text-align: center; margin-left: 0%;">
+			<img id="iwannakms" src="img/caleb.png"/>
+		</p>
+		
+		<p style="font-size: 25px; color:white; text-align:center;">
+			I enjoy gaming, spending time with friends, and coding. <br/>
+			I am proficient in many languages including: C++, HTML,<br/>
+			Javascript, PHP; and many Adobe products.
+		</p>
+	</div>
+	<br/>
+	<div class="centerDivArrow" onclick="document.getElementById('particles-js').scrollIntoView();">
+		<div class="arrow" style="font-size: 40px; text-align:center;">▼</div>
+	</div>
+	
+	<div class="sideDiv" style="top: 100%;"><br/></div>
+	<div id="picture" style="left: 22%; bottom: 15%">
+		<a onclick="aboutMe()"><img src="img/logo.png" style="width: 12vw;"/></a>
+  	</div>
+
+
+	<div id="picture2" style="left: 60%; bottom: 26%;">
+		<a><img src="img/languages2.png" style="width: 20vw;"/></a>
+  	</div>
+
+
+	<div id="bg-dark">
+		<br>
+	</div>
+
+	<div id="particles-js"></div>
+	<div></div>
+
+
+	<div class="centerDivNoBG">
+		<h1>My Creations</h1>
+	</div>
+
+	<div>
+		<img class="cloud1" title="click me!" onclick="rotateRight('moscow')" src="img/cloud1.png" style="z-index: 28; width:230px; position:absolute; left: 12%; top: 120%;"/>
+	</div>
+	<div>
+		<img class="cloud2" title="click me!" onclick="rotateLeft('destiny')" src="img/cloud2.png" style="z-index: 28; width:230px; position:absolute; left: 80%; top: 115%;"/>
+	</div>
+
+	<div>
+		<img id="destinyIsland" title="click me!" onclick="rotateLeft('destiny')" class="right" src="img/destiny.png"/>
+	</div>
+	
+	<div>
+		<img id="moscowIsland" title="click me!" onclick="rotateRight('moscow')" class="left" src="img/moscow.png"/>
+	</div>
+	
+	<div>
+		<img src="img/comic.png" title="click me!" id="comicIsland" class="middle" onclick="showInfo('comic')"/>
+	</div>
+	
+
+	<div class="centerDivNoBG2">
+		<h2>Comic Book Island</h2>
+	</div>
+
+	<div id = "bottom"></div>
+	
+	<div class="centerDivArrow2" onclick="document.getElementById('slideshow').scrollIntoView();">
+		<div class="arrow" style="font-size: 40px; text-align:center;">▼</div>
+	</div>
+	<br/>
+
+	<div class="sideDiv2" style="top: 200%;"><br/></div>	
+
+	<div id="slideshow" style="position: absolute; top: 200%; height: 100vh; text-align:center;">
+		<div style="
+		margin-top: 5vh;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		margin-left: 20vw;
+		margin-bottom: 10vw;
+		position:absolute;
+		width: 60vw;
+		background-color: rgba(8, 2, 22, 0.6);
+		border-radius: 10%;">
+			<h1>Screen-Selfies</h1>
+			<h2>Screenshots I have taken myself from games I play</h2>
+
+			<img src="img/ssRemnant2.png" width="800vw" style="border-radius:10%;"/>
+			<h2>Remnant: From the Ashes</h2>
+			<p style="padding: 20px; width: 40vw; margin-left: 9vw; color:white; font-size:20px;box-shadow: 0 0 10px #fff,0 0 5px #fff,0 0 10px #fe4213,0 0 12px #fe4213,0 0 10px #fe4213,inset 0 0 13px #fe4213;">
+				Remnant: From the Ashes is a Survival-Horror Action shooter developed by Gunfire Games. It is compared to the videogame series
+				"Dark Souls"; because both games have strong enemies that can easily kill you unless you learn how to dodge their attacks and
+				quickly dispatch them. I have beaten Remnant twice. It has taught me that no task is too difficult; and if at first you fail,
+				try, try, try, reload, try, die again, scream, reload, try, try and try again; because at somepoint I will figure everything
+				out and overcome the challenge. I am not scared of difficulties and I embrace challenge.
+			</p>
+			<br/>
+			<br/>
+			<div class="sideDiv" style="position:relative;"><br/></div>
+			<br/>
+			<br/>
+			
+
+			<img src="img/ssDestiny.png" width="800vw" style="border-radius:10%;"/>
+			<h2>Destiny 2</h2>
+			<p style="padding: 20px; width: 40vw; margin-left: 9vw; color:white; font-size:20px;box-shadow: 0 0 10px #fff,0 0 5px #fff,0 0 10px #bc13fe,0 0 12px #bc13fe,0 0 10px #bc13fe,inset 0 0 13px #bc13fe;">
+				Destiny 2 is a Looter-Shooter developed by Bungie. It's a first person shooter where every enemy is a new opportunity for cool
+				loot, every environment is a new world to explore, and every player is a new friend waiting to be made. I have played Destiny 2
+				for over 1000 hours. It has taught me how to get along with many different people. It has also brought out my eye for beauty and
+				helped me to learn how to make things look great. In the game, I am always chasing the next best gun; and in life I am always
+				chasing the next opportunity to flex my creative muscles.
+				<div class="sideDiv3" style="position:relative;"><br/></div>
+			</p>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+
+			<img src="img/ssForza.png" width="800vw" style="border-radius:10%;"/>
+			<h2>Forza Horizon 5</h2>
+			<p style="padding: 20px; width: 40vw; margin-left: 9vw; color:white; font-size:20px;box-shadow: 0 0 10px #fff,0 0 5px #fff,0 0 10px #fe4213,0 0 12px #fe4213,0 0 10px #fe4213,inset 0 0 13px #fe4213;">
+				
+				Forza Horizon 5 is a racing game developed by Turn 10 and Playground Games. It's all about buying expensive cars, tuning them to
+				get the best out of them, painting them, and then taking them racing. I have played most of the Forza games on and off through the years,
+				although mostly the Horizon series as they have huge open worlds for me to explore and appreciate. Forza has taught me to make good
+				split second decisions and to never settle for something that is less than the best. I have also found that I am able to problem solve
+				faster and more accurately.
+			</p>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+		</div>
+	</div>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<div>
+		<img class="cloud3" onclick="rotateRight('moscow')" src="img/cloud1.png" style="z-index: 28; width:230px; position:absolute; left: 70%; top: 320%;"/>
+	</div>
+	<div>
+		<img class="cloud3" onclick="rotateLeft('destiny')" src="img/cloud2.png" style="z-index: 28; width:230px; position:absolute; left: 20%; top: 215%;"/>
+	</div>
+	<div>
+		<img class="cloud3" onclick="rotateLeft('destiny')" src="img/cloud1.png" style="z-index: 28; width:230px; position:absolute; left: 20%; top: 415%;"/>
+	</div>
+
+</body>
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js">	</script>
+<script src="script.js"></script>
+<script type="text/javascript">
+
+	function showInfo(value)
+	{
+		if (value == "comic")
+		{
+			$("#bottom").empty();
+			$("#bottom").append(
+			"<div id='toZoom' style='z-index:90;position:fixed; left: 50%; top:40%; color:white; font-size:0px; background-color: rgba(8, 2, 22, 0.6); padding:0px; box-shadow: 0 0 15px #fff,0 0 5px #fff,0 0 15px #bc13fe,0 0 12px #bc13fe,0 0 15px #bc13fe,inset 0 0 13px #bc13fe; border: 2px solid orange; border-radius:20px; text-align:center;'>♦ Comic Book Island ♦<br/><div style:'font-size:15px; text-align:center;'>A comic I created for VIO 102 in 2020, about a magical village.</div><a><button onclick='zoom(\"comic/index.html\")'>Visit</button></a></div>");	
+			$("#toZoom").animate({'font-size':"25px", padding:"15px"},500);
+		} else if (value == "destiny")
+		{
+			$("#bottom").empty();
+			$("#bottom").append(
+			"<div id='toZoom' style='z-index:90;position:fixed; left: 50%; top:40%; color:white; font-size:0px; background-color: rgba(8, 2, 22, 0.6); padding:0px; box-shadow: 0 0 15px #fff,0 0 5px #fff,0 0 15px #bc13fe,0 0 12px #bc13fe,0 0 15px #bc13fe,inset 0 0 13px #bc13fe; border: 2px solid orange; border-radius:20px; text-align:center;'>♦ Destiny Island ♦<br/><div style:'font-size:15px; text-align:center;'>VIO 202, 2021. We had to make a \"How-To\" website for mobile.<br/>Mine was How to Start Playing Destiny 2.</div><a><button onclick='zoom(\"destiny/index.html\")'>Visit</button></a></div>");
+			$("#toZoom").animate({'font-size':"25px", padding:"15px"},500);
+		} else
+		{
+			$("#bottom").empty();
+			$("#bottom").append(
+			"<div id='toZoom' style='z-index:90;position:fixed; left: 50%; top:40%; color:white; font-size:0px; background-color: rgba(8, 2, 22, 0.6); padding:0px; box-shadow: 0 0 15px #fff,0 0 5px #fff,0 0 15px #bc13fe,0 0 12px #bc13fe,0 0 15px #bc13fe,inset 0 0 13px #bc13fe; border: 2px solid orange; border-radius:20px; text-align:center;'>♦ Moscow Island ♦<br/><div style:'font-size:15px; text-align:center;'>VIO 202, 2021. We were tasked to create a lyric video </br> for a song of our choice in the style of the song's <br/> album artwork. I chose Stone Sour's Song #3.</div><a><button onclick='zoom(\"moscow/index.html\")'>Visit</button></a></div>");	
+			$("#toZoom").animate({'font-size':"25px", padding:"15px"},500);
+		}
+	}
+
+	function zoom(site)
+	{
+		$("#toZoom").animate({width:"3%", height:"3%", 'font-size':"0%",'border-radius':"50%"},500);
+		setTimeout(function ()
+		{
+			$("#toZoom").empty();
+			$("#toZoom").css("background-color", "black");
+	  	}, 300);
+		$("#toZoom").animate({left:"0vh", top:"0vh"},1000);
+		$("#toZoom").animate({width:"100%", height:"100%", 'border-radius':"0%"},500);
+
+		setTimeout(function ()
+		{
+			window.location = site;
+	  	}, 2500);
+	}
+
+	function rotateLeft(value)
+	{
+		$("#bottom").empty();
+		if (value == "destiny")
+		{
+			console.log("destiny");
+			$(".centerDivNoBG2").children().html("<br/>");
+			$("#moscowIsland").animate({width:"15%", left: "140vh", top: "115vh"},3000);
+			$("#comicIsland").animate({width:"15%", left: "30vh", top: "115vh"},3000);
+			$("#destinyIsland").animate({width:"30%", left: "35vw", top: "150vh"},3000, function()
+				{
+					$("#destinyIsland").attr("onclick", "showInfo('destiny')");
+					$("#destinyIsland").attr("class", "middle");
+					$("#comicIsland").attr("onclick", "rotateRight('comic')");
+					$(".cloud1").attr("onclick", "rotateRight('comic')");
+					$("#comicIsland").attr("class", "left");
+					$("#moscowIsland").attr("onclick", "rotateLeft('moscow')");
+					$(".cloud2").attr("onclick", "rotateLeft('moscow')");
+					$("#moscowIsland").attr("class", "right");
+					$(".centerDivNoBG2").children().html("Destiny Island");
+				});	
+		} else if (value == "moscow")
+		{
+			console.log("moscow");
+			$(".centerDivNoBG2").children().html("<br/>");
+			$("#moscowIsland").animate({width:"30%", left: "35vw", top: "150vh"},3000);
+			$("#comicIsland").animate({width:"15%", left: "140vh", top: "115vh"},3000);
+			$("#destinyIsland").animate({width:"15%", left: "30vh", top: "115vh"},3000,  function()
+				{
+					$("#moscowIsland").attr("onclick", "showInfo('moscow')");
+					$("#moscowIsland").attr("class", "middle");
+					$("#destinyIsland").attr("onclick", "rotateRight('destiny')");
+					$(".cloud1").attr("onclick", "rotateRight('destiny')");
+					$("#destinyIsland").attr("class", "left");
+					$("#comicIsland").attr("onclick", "rotateLeft('comic')");
+					$(".cloud2").attr("onclick", "rotateLeft('comic')");
+					$("#comicIsland").attr("class", "right");
+					$(".centerDivNoBG2").children().html("Moscow Island");
+				});	
+		}  else
+		{
+			console.log("comic");
+			$(".centerDivNoBG2").children().html("<br/>");
+			$("#comicIsland").animate({width:"30%", left: "35vw", top: "150vh"},3000);
+			$("#destinyIsland").animate({width:"15%", left: "140vh", top: "115vh"},3000);
+			$("#moscowIsland").animate({width:"15%", left: "30vh", top: "115vh"},3000,  function()
+				{
+					$("#comicIsland").attr("onclick", "showInfo('comic')");
+					$("#comicIsland").attr("class", "middle");
+					$("#moscowIsland").attr("onclick", "rotateRight('moscow')");
+					$(".cloud1").attr("onclick", "rotateRight('moscow')");
+					$("#moscowIsland").attr("class", "left");
+					$("#destinyIsland").attr("onclick", "rotateLeft('destiny')");
+					$(".cloud2").attr("onclick", "rotateLeft('destiny')");
+					$("#destinyIsland").attr("class", "right");
+					$(".centerDivNoBG2").children().html("Comic Book Island");
+				});	
+		}
+		
+	}
+
+	function removeBubble()
+	{
+		$("#toZoom").remove();
+	}
+
+	function rotateRight(value)
+	{
+		$("#bottom").empty();
+		if (value == "destiny")
+		{
+			console.log("destiny");
+			$(".centerDivNoBG2").children().html("<br/>");
+			$("#moscowIsland").animate({width:"15%", left: "140vh", top: "115vh"},3000);
+			$("#comicIsland").animate({width:"15%", left: "30vh", top: "115vh"},3000);
+			$("#destinyIsland").animate({width:"30%", left: "35vw", top: "150vh"},3000, function()
+				{
+					$("#destinyIsland").attr("onclick", "showInfo('destiny')");
+					$("#destinyIsland").attr("class", "middle");
+					$("#comicIsland").attr("onclick", "rotateRight('comic')");
+					$(".cloud1").attr("onclick", "rotateRight('comic')");
+					$("#comicIsland").attr("class", "left");
+					$("#moscowIsland").attr("onclick", "rotateLeft('moscow')");
+					$(".cloud2").attr("onclick", "rotateLeft('moscow')");
+					$("#moscowIsland").attr("class", "right");
+					$(".centerDivNoBG2").children().html("Destiny Island");
+				});	
+		} else if (value == "moscow")
+		{
+			console.log("moscow");
+			$(".centerDivNoBG2").children().html("<br/>");
+			$("#moscowIsland").animate({width:"30%", left: "35vw", top: "150vh"},3000);
+			$("#comicIsland").animate({width:"15%", left: "140vh", top: "115vh"},3000);
+			$("#destinyIsland").animate({width:"15%", left: "30vh", top: "115vh"},3000,  function()
+				{
+					$("#moscowIsland").attr("onclick", "showInfo('moscow')");
+					$("#moscowIsland").attr("class", "middle");
+					$("#destinyIsland").attr("onclick", "rotateRight('destiny')");
+					$(".cloud1").attr("onclick", "rotateRight('destiny')");
+					$("#destinyIsland").attr("class", "left");
+					$("#comicIsland").attr("onclick", "rotateLeft('comic')");
+					$(".cloud2").attr("onclick", "rotateLeft('comic')");
+					$("#comicIsland").attr("class", "right");
+					$(".centerDivNoBG2").children().html("Moscow Island");
+				});	
+		}  else
+		{
+			console.log("comic");
+			$(".centerDivNoBG2").children().html("<br/>");
+			$("#comicIsland").animate({width:"30%", left: "35vw", top: "150vh"},3000);
+			$("#destinyIsland").animate({width:"15%", left: "140vh", top: "115vh"},3000);
+			$("#moscowIsland").animate({width:"15%", left: "30vh", top: "115vh"},3000,  function()
+				{
+					$("#comicIsland").attr("onclick", "showInfo('comic')");
+					$("#comicIsland").attr("class", "middle");
+					$("#moscowIsland").attr("onclick", "rotateRight('moscow')");
+					$(".cloud1").attr("onclick", "rotateRight('moscow')");
+					$("#moscowIsland").attr("class", "left");
+					$("#destinyIsland").attr("onclick", "rotateLeft('destiny')");
+					$(".cloud2").attr("onclick", "rotateLeft('destiny')");
+					$("#destinyIsland").attr("class", "right");
+					$(".centerDivNoBG2").children().html("Comic Book Island");
+				});	
+		}
+		
+	}
+
+	function aboutMe()
+	{
+		console.log("about me");
+		$("#bottom").append(
+			"<div style='z-index:30;position:fixed; left: 1%; top:60%; color:white; font-size:25px; background-color: black; padding:15px; box-shadow: 0 0 15px #fff,0 0 5px #fff,0 0 15px #bc13fe,0 0 12px #bc13fe,0 0 15px #bc13fe,inset 0 0 13px #bc13fe; border: 2px solid orange; border-radius:20px; text-align:center;'>♦ About Me ♦<br/><div style:'font-size:15px; text-align:center;'>I am a second year Multimedia student at TUKS. <br/> I enjoy gaming, spending time with friends, <br/> and coding. I am proficient in C++, Java, HTML,<br/>  CSS, Javascript, PHP, some 64 Assembly and <br/>  Adobe products. </div></div>");
+	}
+</script>
+
+
+</html>

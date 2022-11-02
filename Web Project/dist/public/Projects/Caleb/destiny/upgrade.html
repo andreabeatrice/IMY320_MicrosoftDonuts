@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>S4 Play Destiny 2</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+		<style>
+body {background-image: linear-gradient(to bottom, #1d1823, #221d2d, #3c304b); color: white;}
+		h1 {text-align: right; margin-right: 1em;}
+		#header
+		{
+			background-image: linear-gradient(to right, #322e64, #8374bd, #6160a9);
+			border: solid white 2px;
+			margin: 0px;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+			font-size: 2.5em;
+			color: white;
+			font-family: Garamond, serif;
+		}
+		h2 {text-align: center; text-decoration: underline; font-size: 30px;}
+		div {text-align: center; margin-bottom: 10%}
+
+		.character
+		{
+			height: 50em;
+			margin-bottom: -6em;
+			animation: breathe 4s linear infinite;
+		}
+
+		.character:hover
+		{
+			height: 55em;
+			animation: breathe 1s linear infinite;
+		}
+
+		.more-info
+		{
+		  font-size: 4em;
+		  padding: 10px;
+		}
+
+		@keyframes breathe
+		{
+  			0% {transform: scale(1);}
+			25% {transform: scale(1.04);}
+			50% {transform: scale(1);}
+			100% {transform: scale(1);}
+		}
+
+		button
+		{
+			background-image: linear-gradient(to right, #6160a9, #b3a4fd, #6160a9);
+			width: 60%;
+			font-size: 320%;
+			border: 0.2em solid ivory;
+			border-radius: 25%;
+			animation: wiggle 5s linear infinite;
+		}
+
+		@keyframes wiggle
+		{
+			0% {transform: rotate(0deg);}
+  			85% {transform: rotate(0deg);}
+  			90% {transform: rotate(10deg);}
+  			95% {transform: rotate(-10deg);}
+  			100% {transform: rotate(0deg);}
+		}
+
+		.dropdown
+		{
+			padding-right: 40px;
+		  float: left;
+		  bottom: 3.3em;
+		  margin-left: 20px;
+		  position: relative;
+		}
+
+		a
+		{
+			text-decoration: none;
+		}
+
+		ul
+		{
+			margin-top: 2px;
+			margin-bottom: 2px;
+		}
+
+		li
+		{
+			border: 3px solid white;
+			list-style-type: none;
+			margin-left: -0.5em;
+			margin-bottom: 10px;
+		}
+
+		.dropdown-content
+		{
+		  display: none;
+		  position: absolute;
+		  background-color: #a592b7;
+		  min-width: 100px;
+		  font-size: 1.4em;
+		  padding: 5px 10px;
+		}
+
+		.dropdown:hover
+		{
+		  transform: rotate(1);
+		}
+
+		.dropdown:hover .dropdown-content {
+		  display: block;
+		}
+		</style>
+		<script type="text/javascript">
+			var myClass = localStorage.getItem('myClass');
+			console.log(myClass);
+			localStorage.setItem('myClass', myClass);
+		</script>
+	</head>
+	<body>
+		<div id="header">
+			<h1>Step 6: Upgrade your Gear!</h1>
+			<span class="dropdown">
+			<i class="material-icons" style="font-size: 1.5em;">menu</i>
+			<div class="dropdown-content">
+				<ul>
+					<li><a href="classes.html">Classes</a></li>
+					<li><a href="tutorial.html">Tutorial</a></li>
+					<li><a href="subclasses.html">Subclasses</a></li>
+					<li><a href="guns.html">Guns</a></li>
+					<li><a href="exotic.html">Exotic</a></li>
+					<li><a href="upgrade.html">Upgrade</a></li>
+					<li><a href="activities.html">Activities</a></li>
+					<li><a href="../index.html"><img src="../img/logo.png"></a></li>
+				</ul>
+			</div>
+		</span>
+		</div>
+		<h2></h2>
+		<br/>
+
+		<div>
+			<br/>
+			<p style="font-size: 2em;">Upgrading is a very confusing topic in Destiny. How it works is that each item of gear has a power level, as well as stats. These will in turn impact your character's own stats and power level. Gear with good stats and perks is not very easy to come by, and I recommend you do some research to figure out what stats you need to be chasing. Gear with high power levels can easily be earned through <b>Core Activities</b> (more on those later) and that power level can be transferred you your high-stat gear with an <b>Upgrade Module</b>. Just be careful, because the item you transfer the power level from will be destroyed. When you're ready, click the button to upgrade your gear.</p><br/>
+			<img src="img/upgrade.png" style="width: 45em;">
+			<br/>
+			<button onclick="location.href='activities.html'">Upgrade!</button>
+		</div>
+
+		<div>
+			<div id="point"></div>
+			<figcaption id="figClass" style="margin: 0 auto; max-width: 25em; font-size: 2em; position: relative; color: black; background-color: white; border: solid black 2px; border-radius: 20px; padding: 6px;">"This will show all those nerdy Warlocks!"</figcaption>
+			<br/>
+			<img id="imgClass" src="img/hunter.png" class="character">
+		</div>
+	</body>
+
+	<script type="text/javascript">
+		if (myClass == 2)
+		{
+			document.getElementById('imgClass').src="img/titan.png";
+			document.getElementById('figClass').innerHTML='*Scratches head and shrugs*';
+		} else if (myClass == 3)
+		{
+			document.getElementById('imgClass').src="img/warlock.png";
+			document.getElementById('imgClass').style="transform: scaleX(-1);";
+			document.getElementById('figClass').innerHTML='"A better gun means higher efficiency."';
+		}
+	</script>
+</html>
